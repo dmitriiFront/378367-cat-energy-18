@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Зотов](https://up.htmlacademy.ru/adaptive/18/user/378367).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Бляхарский](https://up.htmlacademy.ru/зкщашду/id515643).
 
 ---
 
