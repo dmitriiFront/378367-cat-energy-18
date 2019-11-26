@@ -29,6 +29,69 @@
       </nav>
     </header>
 
+		<main class="page-main">
+			<h2 class="title-page">Подбор программы</h2>
+			<p class="page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+			<form class="page-main__form feedback" action="https://echo.htmlacademy.ru" method="post">
+				<section class="feedback__profile">
+					<div class="feedback__personal-data personal-data">
+						<label class="personal-data__label" for="">имя:<sup>*</sup>
+							<input class="personal-data__input" type="text" value="БАРСИК" required  name="имя">
+						</label>
+						<label class="personal-data__label" for="">вес (кг):<sup>*</sup>
+							<input class="personal-data__input" type="text" value="7" required name="вес (кг)">
+						</label>
+						<label class="personal-data__label" for="">возраст (лет):<sup>*</sup>
+							<input class="personal-data__input" type="text" value="7" required name="возраст (лет)">
+						</label>
+					</div>
+					<div class="feedback__checkboxs checkboxs">
+						<label class="checkboxs__label" for="">
+							<input class="checkboxs__input" type="checkbox">похудение
+						</label>
+						<label class="checkboxs__label" class="checkboxs__label" for="">
+							<input class="checkboxs__input" type="checkbox">набор массы
+						</label>
+						<label class="checkboxs__label" for="">
+							<input class="checkboxs__input" type="checkbox">не знаю (нужен ваш совет)
+						</label>
+					</div>
+				</section>
+				<section class="feedback__сontact-details сontact-details">
+					<h3 class="сontact-details__title">Контактные данные (владельца кота)</h3>
+					<label class="сontact-details__label" for="">e-mail:<sup>*</sup>
+						<input class="сontact-details__input" type="text" name="e-mail" required>
+					</label>
+					<label class="сontact-details__label" for="">телефон:<sup>*</sup>
+						<input class="сontact-details__input" type="text" name="телефон" required>
+					</label>
+				</section>
+				<section class="feedback__comment comment">
+					<h3 class="comment__title">Комментарий</h3>
+					<label class="comment__label" for="">
+						<textarea class="comment__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
+					</label>
+				</section>
+				<section class="feedback__additionally additionally">
+					<h3 class="additionally__title">Комментарий</h3>
+					<label class="additionally__label" for="">
+						<input class="additionally__input" type="checkbox" name="Сахарозаменитель">Сахарозаменитель
+					</label>
+					<label class="additionally__label" class="checkboxs__label" for="">
+						<input class="additionally__input" type="checkbox" name="Питьевая вода">Питьевая вода
+					</label>
+					<label class="additionally__label" for="">
+						<input class="additionally__input" type="checkbox" name="Молоко">Молоко
+					</label>
+					<label class="additionally__label" for="">
+						<input class="additionally__input" type="checkbox" name="витамины">Витамины
+					</label>
+				</section>
+				<input class="feedback__button button" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
+				<span class="feedback__clarification"><sup>*</sup>&#8211 Обязательное поле</span>
+			</form>
+		</main>
+
 		<section class="map">
 			<div class="address">
 				<b class="address__text">приглашаем сотрудничеству дилеров!</b>
