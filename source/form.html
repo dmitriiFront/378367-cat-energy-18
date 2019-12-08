@@ -30,24 +30,24 @@
     </header>
 
   <main class="page-main">
-    <h2 class="title-page">Подбор программы</h2>
+    <h2 class="page-main__title">Подбор программы</h2>
     <p class="page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="page-main__form feedback" action="https://echo.htmlacademy.ru" method="post">
       <section class="feedback__profile">
         <div class="feedback__personal-data personal-data">
-          <label class="personal-data__label" for="">имя:<sup>*</sup>
-            <input class="personal-data__input" type="text" value="БАРСИК" required  name="имя">
+          <label class="personal-data__label" for=""><span class="personal-data__span">имя:<sup>*</sup></span>
+            <input class="personal-data__input" type="text" value="БАРСИК" name="имя" required>
           </label>
-          <label class="personal-data__label" for="">вес (кг):<sup>*</sup>
-            <input class="personal-data__input" type="text" value="7" required name="вес (кг)">
+          <label class="personal-data__label" for=""><span class="personal-data__span">вес (кг):<sup>*</sup></span>
+            <input class="personal-data__input" type="number" value="7" name="вес (кг)" required>
           </label>
-          <label class="personal-data__label" for="">возраст (лет):<sup>*</sup>
-            <input class="personal-data__input" type="text" value="7" required name="возраст (лет)">
+          <label class="personal-data__label" for=""><span class="personal-data__span"></span>возраст (лет):<sup>*</sup></span>
+            <input class="personal-data__input" type="number" value="7"  name="возраст (лет)" required>
           </label>
         </div>
         <div class="feedback__checkboxs checkboxs">
           <label class="checkboxs__label" for="">
-            <input class="checkboxs__input" type="checkbox">похудение
+            <input class="checkboxs__input" type="checkbox"> похудение
           </label>
           <label class="checkboxs__label" class="checkboxs__label" for="">
             <input class="checkboxs__input" type="checkbox">набор массы
@@ -63,7 +63,7 @@
           <input class="сontact-details__input" type="text" name="e-mail" required>
         </label>
         <label class="сontact-details__label" for="">телефон:<sup>*</sup>
-          <input class="сontact-details__input" type="text" name="телефон" required>
+          <input class="сontact-details__input" type="number" name="телефон" required>
         </label>
       </section>
       <section class="feedback__comment comment">
