@@ -1,0 +1,75 @@
+.page-footer {
+  background-color: @darker-white;
+  padding-top: 39px;
+}
+
+.page-footer__title {
+  display: block;
+  background: url("../../img/logo-footer.svg") no-repeat;
+  background-size: 128px 24px;
+  width: 128px;
+  height: 24px;
+  margin: 0 auto 31px;
+}
+
+.page-footer__social {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  // ИЗМЕНИТЬ ЦВЕТ НИЖНЕГО БОРДЕРА!!!!!!!
+  padding: 24px 75px 21px 65px;
+  // падинги временны, лучше сделать флексами!!!!!!!!!!!!!
+}
+
+.social__item {
+  display: inline-block;
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link--vk {
+  display: inline-block;
+  background: url("../../img/icon-vk.svg") no-repeat;
+  background-size: 22px 12px;
+  width: 22px;
+  height: 12px;
+}
+
+.social__link--inst {
+  display: inline-block;
+  background: url("../../img/icon-insta.svg") no-repeat;
+  background-size: 17px 17px;
+  width: 17px;
+  height: 17px;
+}
+
+.social__link--fb {
+  display: inline-block;
+  background: url("../../img/icon-fb.svg") no-repeat;
+  background-size: 10px 19px;
+  width: 10px;
+  height: 19px;
+}
+
+.page-footer__copyright {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.copyright__text {
+  display: inline-block;
+  .text(@font-size: 16px; @color: @greyish);
+  font-family: @spare-font;
+  margin-right: 130px;
+  // маргин временный, лучше сделать флексами!!!!!!!!!!!!!
+}
+
+.copyright__logo {
+  display: inline-block;
+  background: url("../../img/htmlacademy.svg") no-repeat;
+  width: 27px;
+  height: 34px;
+  background-size: 27px 34px;
+}
