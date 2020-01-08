@@ -1,19 +1,22 @@
 .greeting-site {
-  background: url("../../img/index-background-mobile@1x.jpg") no-repeat;
-  background-size: 320px 305px;
   margin-bottom: 22px;
   padding-top: 25px;
+  background: url("../../img/index-background-mobile@1x.jpg") no-repeat;
+  background-size: 320px 305px;
 }
 
 .greeting-site__title {
-  .text(@font-size: 36px; @color: @white; @line-height: 1);
+  // display: inline-block;
   margin-bottom: 25px;
+  font-size: 36px;
+  color: @white;
+  text-align: center;
 }
 
 .greeting-site__instruction {
-  .text(@color: @white);
-  text-transform: uppercase;
   margin-bottom: 29px;
+  color: @white;
+  text-transform: uppercase;
 }
 
 .greeting-site__image {
@@ -26,4 +29,8 @@
   width: 280px;
   height: 40px;
   padding: 14px 0 11px;
+}
+
+.wrapper {
+  // border: 1px solid red;
 }
