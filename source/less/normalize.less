@@ -1,8 +1,13 @@
 body {
-  margin: 0;
   padding: 0;
-  font-family: @main-font;
   width: 320px;
+  margin: 0;
+  // text
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 1;
+  color: @black;
+  text-align: left;
 }
 
 h1,
@@ -24,6 +29,7 @@ li {
 
 a {
   text-decoration: none;
+  color: @black;
 }
 
 .visually-hidden {
@@ -32,14 +38,25 @@ a {
 }
 
 .button {
-  .text(@color: @white);
-  background-color: @lightGreen;
-  box-sizing: border-box;
-  text-transform: uppercase;
-  border: none;
   display: block;
+  box-sizing: border-box;
+  color: @white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @lightGreen;
+  border: none;
+}
+
+button {
+  border: none;
 }
 
 .wrapper {
   margin: 0 20px;
 }
+
+// .input[type="text"] {
+//   display: block;
+//   // border: 6px solid @pinkish-grey;
+//   height: 145px;
+// }

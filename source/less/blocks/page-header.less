@@ -1,8 +1,68 @@
+.page-header {
+  // border: 1px solid red;
+  padding-top: 11px;
+}
+
+.page-header__top {
+  position: relative;
+  margin: 0 20px 15px;
+  // border: 1px solid green;
+}
+
 .page-header__logo {
   width: 191px;
   height: 39px;
+  // margin-right: 58px;
+  margin-left: 0px;
 }
 
 .page-header__logo-image {
   background-size: 191px 39px;
+}
+
+// класс обычной кнопки в закрытом состоянии!!!!!!!!!!11
+.menu-toggle--closed {
+  // border: 1px solid red;
+  position: absolute;
+  top: 11px;
+  right: 0px;
+  width: 25px;
+  height: 19px;
+
+  background: url("../../img/icon-mobile-menu.svg");
+  background-size: 25px 19px;
+  border: none;
+}
+
+.menu-toggle--opened {
+  // top: 0;
+  // // right: auto;
+  // left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 11px;
+    right: 0px;
+
+    width: 36px;
+    height: 2px;
+
+    background-color: @black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }

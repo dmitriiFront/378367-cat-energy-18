@@ -8,22 +8,23 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/39x39" width="39" height="39" alt="логотип сайта cat energy">
-      </a>
-      <a class="page-header__title cat-energy"><span class="cat-energy__cat">CAT </span> ENERGY</a>
+      <div class="page-header__top">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src=img/logo-mobile.svg width="191" height="39" alt="логотип сайта cat energy">
+        </a>
+        <button class="page-header__toggle menu-toggle menu-toggle--closed"></button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
             <li class="site-list__item site-list__item--active">
-              <a>Подбор программы</a>
+              <a href="index.html">ГЛАВНАЯ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">ПОДБОР ПРОГРАММЫ</a>
             </li>
           </ul>
         </div>
@@ -33,53 +34,59 @@
   <!-- <main class="page-main"> -->
     <!-- не переделано почти ничего -->
     <div class="greeting-page">
-      <h2 class="page-title">Подбор программы</h2>
+      <h2 class="page-title page-title--form">Подбор программы</h2>
       <p class="greeting-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     </div>
-    <section class="page-section">
-      <div class="page-section__wrapper">
-        <form class="page__form  profile" action="https://echo.htmlacademy.ru" method="post">
-          <div class="profile__personal-data personal-data">
-            <label class="personal-data__label" for="">
-              <span class="personal-data__span">имя:<sup>*</sup></span> <input class="personal-data__input" type="text" value="БАРСИК" name="имя" required>
-            </label>
-            <label class="personal-data__label" for="">
-              <span class="personal-data__span">вес (кг):<sup>*</sup></span> <input class="personal-data__input" type="number" value="7" name="вес (кг)" required>
-            </label>
-            <label class="personal-data__label" for="">
-              <span class="personal-data__span">возраст (лет):<sup>*</sup></span> <input class="personal-data__input" type="number" value="7"  name="возраст (лет)" required>
-            </label>
-          </div>
-          <div class="profile__checkboxes checkboxes">
-            <label class="checkboxes__label" for="">
-              <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__span">похудение</span>
-            </label>
-            <label class="checkboxes__label" class="checkboxes__label" for="">
-              <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__span">набор массы</span>
-            </label>
-            <label class="checkboxes__label" for="">
-              <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__span">не знаю (нужен ваш совет)</span>
-            </label>
-          </div>
+
+    <section class="questionnaire">
+      <div class="questionnaire__wrapper wrapper">
+        <form class="page__form  personal-data" action="https://echo.htmlacademy.ru" method="post">
+          <label class="personal-data__label" for="">
+            <span class="personal-data__span">имя:<sup>*</sup></span> <input class="personal-data__input" type="text" value="БАРСИК" name="имя" required>
+          </label>
+          <label class="personal-data__label" for="">
+            <span class="personal-data__span">вес (кг):<sup>*</sup></span> <input class="personal-data__input" type="number" value="7" name="вес (кг)" required>
+          </label>
+          <label class="personal-data__label" for="">
+            <span class="personal-data__span">возраст (лет):<sup>*</sup></span> <input class="personal-data__input" type="number" value="7"  name="возраст (лет)" required>
+          </label>
         </form>
       </div>
     </section>
+
+    <section class="profile-checkboxes">
+      <div class="profile-checkboxes__wrapper wrapper">
+        <form class="page__form  checkboxes" action="https://echo.htmlacademy.ru" method="post">
+          <label class="checkboxes__label" for="">
+            <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__span">похудение</span>
+          </label>
+          <label class="checkboxes__label" class="checkboxes__label" for="">
+            <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__span">набор массы</span>
+          </label>
+          <label class="checkboxes__label" for="">
+            <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__span">не знаю (нужен ваш совет)</span>
+          </label>
+        </form>
+      </div>
+    </section>
+
     <section class="page-section">
       <h3 class="page-section__title">Контактные данные (владельца кота)</h3>
-      <div class="page-section__wrapper">
+      <div class="page-section__wrapper wrapper">
         <form class="page__form сontact-details" action="https://echo.htmlacademy.ru" method="post">
           <label class="сontact-details__label" for="">
-            <span class="сontact-details__span">e-mail:<sup>*</sup></span> <input class="сontact-details__input" type="text" name="e-mail" required>
+            <span class="сontact-details__span">e-mail:<sup>*</sup></span> <input class="сontact-details__input" type="text" name="e-mail" value="kuklachev@gmail.com" required>
           </label>
           <label class="сontact-details__label" for="">
-            <span class="сontact-details__span">телефон:<sup>*</sup></span> <input class="сontact-details__input" type="number" name="телефон" required>
+            <span class="сontact-details__span">телефон:<sup>*</sup></span> <input class="сontact-details__input" type="number" name="телефон" value="8 (960) 900-60-90" required>
           </label>
         </form>
       </div>
     </section>
+
     <section class="page-section">
       <h3 class="page-section__title">Комментарий</h3>
-      <div class="page-section__wrapper">
+      <div class="page-section__wrapper wrapper">
         <form class="page__form comment" action="https://echo.htmlacademy.ru" method="post">
           <label class="comment__label" for="">
             <textarea class="comment__textarea" name="comment">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
@@ -87,9 +94,10 @@
         </form>
       </div>
     </section>
+
     <section class="page-section">
       <h3 class="page-section__title">Дополнительно</h3>
-      <div class="page-section__wrapper">
+      <div class="page-section__wrapper wrapper">
         <form class="page__form additionally" action="https://echo.htmlacademy.ru" method="post">
           <label class="additionally__label" for="">
             <input class="additionally__input" type="checkbox" name="Сахарозаменитель"> <span class="additionally__span">Сахарозаменитель</span>
@@ -100,7 +108,7 @@
           <label class="additionally__label" for="">
             <input class="additionally__input" type="checkbox" name="Молоко"> <span class="additionally__span">Молоко</span>
           </label>
-          <label class="additionally__label" for="">
+          <label class="additionally__label additionally__label--last-child" for="">
             <input class="additionally__input" type="checkbox" name="витамины"> <span class="additionally__span">Витамины</span>
           </label>
           <input class="feedback__button button" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
@@ -111,17 +119,19 @@
 
 
   <section class="map">
-    <img src="map__card-image" src="https://via.placeholder.com/1440x400" width="1440" height="400" alt="карта с расположением офиса компании">
     <div class="address">
       <b class="address__text">приглашаем сотрудничеству дилеров!</b>
       <span class="address__title address__title--street">ул. Большая Конюшенная, д. 19/8</span>
       <span class="address__title address__title--town">Санкт-Петербург</span>
     </div>
-    <img class="map__mark-image" src="https://via.placeholder.com/55x53" width="55" height="53" alt="метка на карте">
+    <div class="map__wrapper">
+      <img class="map__card-image" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="карта с расположением офиса компании">
+      <img class="map__mark-image" src="img/map-pin.png" width="55" height="53" alt="метка на карте">
+    </div>
   </section>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper wrapper">
         <a class="page-footer__title cat-energy" href="index.html"></a>
         <ul class="page-footer__social social">
           <li class="social__item">
@@ -140,6 +150,31 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.menu-toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+
+          // добавлено
+          navToggle.classList.add('menu-toggle--opened');
+          navToggle.classList.remove('menu-toggle--closed');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+
+          // добавлено
+          navToggle.classList.remove('menu-toggle--opened');
+          navToggle.classList.add('menu-toggle--closed');
+        }
+      });
+    </script>
 
   </body>
 </html>
