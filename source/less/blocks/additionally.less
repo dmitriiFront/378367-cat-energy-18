@@ -6,20 +6,52 @@
   display: block;
   margin-bottom: 13px;
 
+  // border: 1px solid red;
+  // position: relative;
+
   &:last-child {
     // не подключается!!!!!!
     margin-bottom: 34px;
+
+    // &::before {
+    //   content: "";
+    //   display: inline-block;
+    //   border: 1px solid @pinkish-grey;
+    //   width: 30px;
+    //   height: 30px;
+    //   vertical-align: middle;
+    //   margin-right: 16px;
+      // background-color: red;
+    }
   }
-}
 
 .additionally__label--last-child {
   margin-bottom: 34px;
 }
 
 .additionally__input {
+  display: none;
+}
+
+.check-mark {
+  position: relative;
+  display: inline-block;
   border: 1px solid @pinkish-grey;
   width: 30px;
   height: 30px;
+  vertical-align: middle;
+}
+
+.additionally__input:checked + .check-mark::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  width: 22px;
+  height: 17px;
+  background: url("../../img/icon-tick.svg") no-repeat;
+  background-size: 22px 17px;
 }
 
 .additionally__span {
