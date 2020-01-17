@@ -1,68 +1,123 @@
-.page-header {
-  // border: 1px solid red;
-  padding-top: 11px;
+.page-wrapper {
+  margin-bottom: 22px;
 }
 
-.page-header__top {
-  position: relative;
-  margin: 0 20px 15px;
+.page-header {
+  border-bottom: 1px solid @light-grey;
+
+  // border: 2px solid black;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 87.5%;
+  padding: 11px 0 15px;
+  margin: 0 auto;
+
   // border: 1px solid green;
 }
 
 .page-header__logo {
-  width: 191px;
-  height: 39px;
-  // margin-right: 58px;
-  margin-left: 0px;
+  // border: 1px solid red;
 }
 
 .page-header__logo-image {
+  width: 191px;
+  height: 39px;
   background-size: 191px 39px;
 }
 
 // класс обычной кнопки в закрытом состоянии!!!!!!!!!!11
 .menu-toggle--closed {
-  // border: 1px solid red;
-  position: absolute;
-  top: 11px;
-  right: 0px;
+  // position: absolute;
+  // top: 25px;
+  // right: 19px;
   width: 25px;
   height: 19px;
-
+  padding: 5px;
   background: url("../../img/icon-mobile-menu.svg");
   background-size: 25px 19px;
   border: none;
 }
 
-.menu-toggle--opened {
-  // top: 0;
-  // // right: auto;
-  // left: 0;
+// .menu-toggle--opened {
 
-  &::before,
-  &::after {
-    content: "";
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 30px;
+//     right: 19px;
+//     width: 36px;
+//     height: 2px;
+//     background-color: @black;
+//   }
 
-    position: absolute;
-    top: 11px;
-    right: 0px;
+//   &::before {
+//     transform: rotate(45deg);
+//   }
 
-    width: 36px;
-    height: 2px;
+//   &::after {
+//     transform: rotate(-45deg);
+//   }
 
-    background-color: @black;
+//   &:active::before,
+//   &:active::after {
+//     background-color: rgba(255, 255, 255, 0.3);
+//   }
+// }
+
+@media (min-width: @tablet-width) {
+  .page-wrapper {
+    margin-bottom: 0;
   }
 
-  &::before {
-    transform: rotate(45deg);
+  .page-header {
+    padding-top: 13px;
+    margin-bottom: 46px;
+    border-bottom: none;
+  }
+  .page-header__wrapper {
+    margin-top: 13px;
+    width: 92.5%;
+    // border: 1px solid fuchsia;
   }
 
-  &::after {
-    transform: rotate(-45deg);
+  .page-header__logo-image {
+    width: 175px;
+    height: 58px;
+    background-size: 175px 58px;
+
+    // border: 1px solid red;
   }
 
-  &:active::before,
-  &:active::after {
-    background-color: rgba(255, 255, 255, 0.3);
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-wrapper {
+    background: url(../../img/index-background-desktop@1x.jpg) 100% 50% no-repeat;
+    min-height: 696px;
+    margin-bottom: 80px;
+  }
+
+  .page-header {
+    padding-top: 42px;
+    margin-bottom: 14px;
+  }
+  .page-header__wrapper {
+    width: 84.72%;
+
+    // border: 1px solid black;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
+    background-size: 203px 60px;
   }
 }

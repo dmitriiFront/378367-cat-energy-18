@@ -1,10 +1,6 @@
-.page-section__wrapper {
-  padding-bottom: 34px;
-  // border: 1px solid red;
-}
-
 .additionally__label {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-bottom: 13px;
 
   &:last-child {
@@ -18,9 +14,27 @@
 }
 
 .additionally__input {
-  border: 1px solid @pinkish-grey;
+  display: none;
+}
+
+.check-mark {
+  position: relative;
+  margin-right: 16px;
   width: 30px;
   height: 30px;
+  border: 1px solid @pinkish-grey;
+}
+
+.additionally__input:checked + .check-mark::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  width: 22px;
+  height: 17px;
+  background: url("../../img/icon-tick.svg") no-repeat;
+  background-size: 22px 17px;
 }
 
 .additionally__span {
@@ -41,6 +55,4 @@
   line-height: 1.14;
   text-align: center;
   color: @greyish;
-  // padding-bottom: 34px;
 }
-
