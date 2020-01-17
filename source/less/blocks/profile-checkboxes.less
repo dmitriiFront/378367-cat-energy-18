@@ -1,10 +1,12 @@
 .profile-checkboxes {
   border-bottom: 1px solid #ededed;
   padding: 21px 0 22px;
+  margin-bottom: 31px;
 }
 
 .checkboxes__label {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-bottom: 12px;
 
 
@@ -14,10 +16,29 @@
 }
 
 .checkboxes__input {
-  border: 1px solid @pinkish-grey;
-  border-radius: 50%;
+  display: none;
+}
+
+.checkboxes__circle {
+  position: relative;
+  display: block;
   width: 30px;
   height: 30px;
+  margin-right: 16px;
+  border: 1px solid @pinkish-grey;
+  border-radius: 50%;
+}
+
+.checkboxes__input:checked + .checkboxes__circle::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: @lightGreen;
+  border-radius: 50%;
 }
 
 .checkboxes__span {

@@ -1,10 +1,9 @@
 .example {
-  // border: 1px solid red;
+  padding: 33px 0 38px;
   background: @darker-white;
 }
 
 .example__title {
-  padding-top: 33px;
   margin-bottom: 33px;
   font-size: 36px;
   // line-height: 1.67;
@@ -18,14 +17,23 @@
   color: @greyish;
 }
 
+.wrapper-flex {
+  display: flex;
+  justify-content: space-between;
+  // border: 1px solid red;
+  margin-bottom: 25px;
+}
+
 .example__item {
-  display: inline-block;
+  // display: inline-block;
+  position: relative;
+  display: flex;
   box-sizing: border-box;
   width: 124px;
   height: 56px;
-  margin-right: 12px;
-  margin-bottom: 25px;
+  margin-right: 14px;
   border: 1px solid @pinkish-grey;
+  border-radius: 3px;
 
   &:last-child {
     margin-right: 0;
@@ -34,11 +42,31 @@
 
 .index__item {
   display: block;
-  // padding: 17px 43px 7px 44px;
+  margin: auto;
   font-size: 24px;
-  font-weight: 500;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.index__desc {
+  // display: none;
+  display: block;
+  position: absolute;
+  top: 84%;
+  left: 15px;
+  width: 67px;
+  height: 21px;
+  padding: 0 10px;
+
+  font-family: @spare-font;
+  font-size: 12px;
+  text-align: center;
+  color: @greyish;
+  background-color: @darker-white;
+
+  &:last-child {
+    left: 17px;
+  }
 }
 
 .example__expenses {
@@ -57,9 +85,8 @@
 
 .example__control {
   display: block;
-  margin: 0 59px 0 64px;
+  margin-left: 44px;
   // отступы верные, из-за шрифта все рушится!!!!!!!!!!!
-  padding-bottom: 38px;
 }
 
 .control__item {
@@ -67,4 +94,3 @@
   line-height: 1.25;
   text-transform: uppercase;
 }
-

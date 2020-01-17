@@ -1,14 +1,12 @@
 .questionnaire {
+  padding-bottom: 23px;
   border-bottom: 1px solid #ededed;
 }
 
-.questionnaire__wrapper {
-  padding-bottom: 23px;
-  // border: 1px solid red;
-}
-
 .personal-data__label {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 14px;
 
   &:last-child {
@@ -17,17 +15,21 @@
 }
 
 .personal-data__span {
+  margin-right: 15px;
   font-size: 16px;
+  white-space: nowrap;
   line-height: 1.13;
   color: #222222;
   text-transform: uppercase;
-  // font-weight: bold;
 }
 
 .personal-data__input {
+  flex-grow: 1;
   box-sizing: border-box;
   height: 45px;
   padding-left: 16px;
-  border: 1px solid @pinkish-grey;
+  font-size: 16px;
   text-transform: uppercase;
+  color: @greyish;
+  border: 1px solid @pinkish-grey;
 }

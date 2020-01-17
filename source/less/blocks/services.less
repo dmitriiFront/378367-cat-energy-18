@@ -1,10 +1,14 @@
 .services {
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
+  width: 87.5%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  // border: 1px solid black;
 }
 
 .services__item {
   margin-bottom: 20px;
-  padding-top: 24px;
+  padding: 24px 20px 22px;
   background-color: @darker-white;
 
   &:last-child {
@@ -12,11 +16,17 @@
   }
 }
 
+.service__wrapper {
+  // border: 1px solid red;
+}
+
 .service__image {
+  float: left;
   width: 50px;
   height: 50px;
   background-color: @lightGreen;
   border-radius: 50%;
+  margin-right: 20px;
 }
 
 // .service__image--slimming {
@@ -32,11 +42,13 @@
 // }
 
 .service__title {
-  display: inline-block;
-  margin-bottom: 25px;
+  padding-top: 6px;
+  // из-за padding-а
+  margin-bottom: 30px;
   font-size: 24px;
   line-height: 1.54;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .service__intro {
@@ -44,15 +56,14 @@
   margin-bottom: 20px;
   line-height: 1.29;
   color: @greyish;
-  text-align: left;
   font-family: @spare-font;
   border-bottom: 1px solid #666666;
 }
 
 .service__link {
-  display: inline-block;
-  margin-bottom: 22px;
+  // display: inline-block;
   font-size: 16px;
+  text-transform: uppercase;
 }
 
 .arrow {
@@ -62,4 +73,88 @@
   margin-left: 14px;
   background: url("../../img/icon-right-arrow-long.svg") no-repeat;
   background-size: 25px 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .services {
+    width: 92.19%;
+    margin-bottom: 49px;
+
+    // border: 1px solid red;
+  }
+  // проба
+  .services__item {
+    padding: 80px 60px 60px 52px;
+    margin-bottom: 30px;
+  }
+  .service__wrapper {
+    // border: 1px solid hotpink;
+  }
+
+  .service__image {
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin-right: 0;
+    margin-left: 20px;
+    background-size: 140px 194px;
+  }
+
+  .service__title {
+    padding: 0;
+    font-size: 36px;
+    line-height: 1.03;
+  }
+
+  .service__intro {
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 61px;
+    border-bottom: none;
+  }
+
+  .service__link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .services {
+    width: 84.72%;
+    margin-bottom: 77px;
+  }
+
+  .services__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .services__item {
+    box-sizing: border-box;
+    width: 46.7%;
+    padding: 40px 56px 62px 52px;
+    margin-bottom: 0;
+  }
+
+  .service__image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    // возможно у каждой картинки будет разный отступ!!!!!!!!!
+    margin-right: 64px;
+    margin-left: 0;
+    background-size: 71px 97px;
+  }
+
+  .service__title {
+    // для равнения из-за float!!!!1
+    padding-top: 30px;
+    margin-bottom: 45px;
+  }
+  .service__intro {
+    margin-bottom: 36px;
+    border-bottom: none;
+  }
+
 }

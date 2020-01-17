@@ -1,8 +1,15 @@
 .greeting-site {
-  margin-bottom: 22px;
+  // border: 1px solid   red;
+}
+
+.greeting-site__wrapper {
   padding-top: 25px;
+  width: 320px;
+  margin: 0 auto;
   background: url("../../img/index-background-mobile@1x.jpg") no-repeat;
   background-size: 320px 305px;
+
+  // border: 1px solid black;
 }
 
 .greeting-site__title {
@@ -10,11 +17,13 @@
   font-size: 36px;
   color: @white;
   text-align: center;
+  font-weight: 400;
 }
 
 .greeting-site__instruction {
   margin-bottom: 29px;
   color: @white;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -25,9 +34,100 @@
 }
 
 .greeting-site__button {
-  width: 280px;
+  margin: 0 auto;
+  width: 87.5%;
   height: 40px;
   padding: 14px 0 11px;
-  font-size: 14px;
 }
 
+@media (min-width: @tablet-width) {
+  .greeting-site {
+    position: relative;
+    padding: 0;
+
+    // для наглядности!!!!!!
+    // background-color: white;
+  }
+
+  .greeting-site__wrapper {
+    width: 709px;
+    min-height: 810px;
+    margin: 0 30px;
+    padding: 0;
+    background: url("../../img/index-can-tablet@1x.jpg") 50% 100% no-repeat;
+    background-size: 709px 609px;
+
+    // border: 1px solid yellow;
+  }
+
+  .greeting-site__title {
+    width: 415px;
+    padding-left: 90px;
+    margin-bottom: 33px;
+    color: @black;
+    font-size: 60px;
+    text-align: left;
+
+    // border: 1px solid black;
+  }
+
+  .greeting-site__instruction {
+    width: 300px;
+    padding-left: 90px;
+    color: @black;
+    font-size: 20px;
+    text-align: left;
+
+    // border: 1px solid black;
+  }
+
+  .greeting-site__image {
+    display: none;
+  }
+
+  .greeting-site__button {
+    position: absolute;
+    top: 230px;
+    left: 120px;
+
+    width: 245px;
+    height: 52px;
+    padding: 17px 0 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .greeting-site {
+    // border: 1px solid darkblue;
+  }
+
+  .greeting-site__wrapper {
+    // мб width: 930px??????????
+    width: 925px;
+    min-height: 500px;
+    margin-left: 190px;
+
+    // не переделано
+    background: url("../../img/index-can-desktop@1x.png") 100% 50% no-repeat;
+    background-size: 552px 500px;
+    // border: 1px solid yellow;
+  }
+
+  .greeting-site__title {
+    margin-top: 84px;
+    padding-left: 0;
+  }
+
+  .greeting-site__instruction {
+    padding-left: 0;
+  }
+
+  .greeting-site__button {
+    top: 320px;
+    left: 190px;
+
+    width: 245px;
+    height: 52px;
+    padding: 17px 0 15px;
+  }
+}

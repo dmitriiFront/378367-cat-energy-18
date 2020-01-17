@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="page-header">
+    <header class="page-header page-header--mb">
       <div class="page-header__top">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src=img/logo-mobile.svg alt="логотип сайта cat energy">
         </a>
         <button class="page-header__toggle menu-toggle menu-toggle--closed"></button>
@@ -33,7 +34,7 @@
     </header>
 
     <main class="page-main">
-      <h2 class="page-title">Каталог продукции</h2>
+      <h2 class="page-title page-title--catalog">Каталог продукции</h2>
       <section class="catalog">
         <ul class="catalog__list">
           <li class="catalog__item">
@@ -197,74 +198,69 @@
 
     <section class="catalog">
       <h3 class="catalog__title">Дополнительные товары</h3>
-      <div class="catalog__wrapper">
+      <div class="catalog__wrapper wrapper">
         <ul class="catalog__list">
-          <div class="catalog__wrapper wrapper">
-            <li class="catalog__item catalog__item--first">
-              <b class="catalog__name">Сахарозаменитель</b>
-              <table class="catalog__characteristics characteristics">
-                <tr>
-                  <td class="characteristics__item">1 упаковка (100 г)</td>
-                  <td class="characteristics__item">200 Р.</td>
-                </tr>
-              </table>
-              <button class="catalog__button button">Заказать</button>
-           </li>
-          </div>
-          <div class="catalog__wrapper wrapper">
-            <li class="catalog__item">
-              <b class="catalog__name">Питьевая вода</b>
-              <table class="catalog__characteristics characteristics">
-                <tr>
-                  <td class="characteristics__item">5 литров</td>
-                  <td class="characteristics__item">50 Р.</td>
-                </tr>
-              </table>
-              <button class="catalog__button button">Заказать</button>
-            </li>
-          </div>
-          <div class="catalog__wrapper wrapper">
-            <li class="catalog__item">
-              <b class="catalog__name">Молоко</b>
-              <table class="catalog__characteristics characteristics">
-                <tr>
-                  <td class="characteristics__item">1 литр</td>
-                  <td class="characteristics__item">100 Р.</td>
-                </tr>
-              </table>
-              <button class="catalog__button button">Заказать</button>
-            </li>
-          </div>
-          <div class="catalog__wrapper wrapper">
-            <li class="catalog__item">
-              <b class="catalog__name">Витамины</b>
-              <table class="catalog__characteristics characteristics">
-                <tr>
-                  <td class="characteristics__item">1 упаковка (30 г)</td>
-                  <td class="characteristics__item">300 Р.</td>
-                </tr>
-              </table>
-              <button class="catalog__button button">Заказать</button>
-            </li>
-          </div>
+          <li class="catalog__item">
+            <b class="catalog__name">Сахарозаменитель</b>
+            <table class="catalog__characteristics characteristics">
+              <tr>
+                <td class="characteristics__item">1 упаковка (100 г)</td>
+                <td class="characteristics__item">200 Р.</td>
+              </tr>
+            </table>
+            <button class="catalog__button button">Заказать</button>
+          </li>
+          <li class="catalog__item">
+            <b class="catalog__name">Питьевая вода</b>
+            <table class="catalog__characteristics characteristics">
+              <tr>
+                <td class="characteristics__item">5 литров</td>
+                <td class="characteristics__item">50 Р.</td>
+              </tr>
+            </table>
+            <button class="catalog__button button">Заказать</button>
+          </li>
+          <li class="catalog__item">
+            <b class="catalog__name">Молоко</b>
+            <table class="catalog__characteristics characteristics">
+              <tr>
+                <td class="characteristics__item">1 литр</td>
+                <td class="characteristics__item">100 Р.</td>
+              </tr>
+            </table>
+            <button class="catalog__button button">Заказать</button>
+          </li>
+          <li class="catalog__item">
+            <b class="catalog__name">Витамины</b>
+            <table class="catalog__characteristics characteristics">
+              <tr>
+                <td class="characteristics__item">1 упаковка (30 г)</td>
+                <td class="characteristics__item">300 Р.</td>
+              </tr>
+            </table>
+            <button class="catalog__button button">Заказать</button>
+          </li>
         </ul>
       </div>
     </section>
 
     <section class="banner">
       <div class="banner__wrapper wrapper">
-        <div class="banner__image"></div>
-        <p class="banner__text">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="banner__image">
+          <div class="banner__gift"></div>
+          <p class="banner__text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
 
     <section class="map">
       <div class="address">
-        <b class="address__text">Приглашаем сотрудничеству дилеров!</b>
-        <span class="address__title address__title--street">ул. Большая Конюшенная, д. 19/8</span>
-        <span class="address__title address__title--town">Санкт-Петербург</span>
+        <span class="address__text">Приглашаем сотрудничеству дилеров!</span>
+        <span class="address__title address__title--street">ул. Большая Конюшенная, д. 19/8
+          <span class="address__title address__title--town">Санкт-Петербург</span>
+        </span>
       </div>
-      <div class="map__wrapper">
+      <div class="map__card">
         <img class="map__card-image" src="img/bg-map-mobile@1x.png" alt="карта с расположением офиса компании">
         <img class="map__mark-image" src="img/map-pin.png" alt="метка на карте">
       </div>

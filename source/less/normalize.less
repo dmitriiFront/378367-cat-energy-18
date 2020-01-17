@@ -1,6 +1,20 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Oswald";
+  font-style: normal;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff2.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Oswald";
+  font-style: normal;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff2") format("woff");
+}
+
 body {
+  min-width: 320px;
   padding: 0;
-  width: 320px;
   margin: 0;
   // text
   font-family: @main-font;
@@ -18,9 +32,11 @@ h5,
 ul,
 li,
 p,
-img {
+img,
+input {
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 
 li {
@@ -30,6 +46,10 @@ li {
 a {
   text-decoration: none;
   color: @black;
+}
+
+b {
+  font-weight: normal;
 }
 
 .visually-hidden {
@@ -57,8 +77,8 @@ button {
   margin: 0 20px;
 }
 
-// .input[type="text"] {
-//   display: block;
-//   // border: 6px solid @pinkish-grey;
-//   height: 145px;
-// }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -2,14 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="page-header">
+    <header class="page-header page-header--mb">
       <div class="page-header__top">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src=img/logo-mobile.svg alt="логотип сайта cat energy">
         </a>
         <button class="page-header__toggle menu-toggle menu-toggle--closed"></button>
@@ -34,20 +35,22 @@
   <!-- <main class="page-main"> -->
     <!-- не переделано почти ничего -->
     <div class="greeting-page">
-      <h2 class="page-title page-title--form">Подбор программы</h2>
-      <p class="greeting-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <div class="greeting-page__wrapper wrapper">
+        <h2 class="page-title">Подбор программы</h2>
+        <p class="greeting-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      </div>
     </div>
 
     <section class="questionnaire">
       <div class="questionnaire__wrapper wrapper">
         <form class="page__form  personal-data" action="https://echo.htmlacademy.ru" method="post">
-          <label class="personal-data__label" for="">
+          <label class="personal-data__label">
             <span class="personal-data__span">имя:<sup>*</sup></span> <input class="personal-data__input" type="text" value="Барсик" name="имя" required>
           </label>
-          <label class="personal-data__label" for="">
+          <label class="personal-data__label">
             <span class="personal-data__span">вес (кг):<sup>*</sup></span> <input class="personal-data__input" type="number" value="7" name="вес (кг)" required>
           </label>
-          <label class="personal-data__label" for="">
+          <label class="personal-data__label">
             <span class="personal-data__span">возраст (лет):<sup>*</sup></span> <input class="personal-data__input" type="number" value="7"  name="возраст (лет)" required>
           </label>
         </form>
@@ -56,15 +59,15 @@
 
     <section class="profile-checkboxes">
       <div class="profile-checkboxes__wrapper wrapper">
-        <form class="page__form  checkboxes" action="https://echo.htmlacademy.ru" method="post">
-          <label class="checkboxes__label" for="">
-            <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__span">похудение</span>
+        <form class="page__form checkboxes" action="https://echo.htmlacademy.ru" method="post">
+          <label class="checkboxes__label">
+            <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__circle"></span> <span class="checkboxes__span">похудение</span>
           </label>
-          <label class="checkboxes__label" class="checkboxes__label" for="">
-            <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__span">набор массы</span>
+          <label class="checkboxes__label" class="checkboxes__label">
+            <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__circle"></span> <span class="checkboxes__span">набор массы</span>
           </label>
-          <label class="checkboxes__label" for="">
-            <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__span">не знаю (нужен ваш совет)</span>
+          <label class="checkboxes__label">
+            <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__circle"></span> <span class="checkboxes__span">не знаю (нужен ваш совет)</span>
           </label>
         </form>
       </div>
@@ -74,10 +77,10 @@
       <h3 class="page-section__title">Контактные данные (владельца кота)</h3>
       <div class="page-section__wrapper wrapper">
         <form class="page__form сontact-details" action="https://echo.htmlacademy.ru" method="post">
-          <label class="сontact-details__label" for="">
+          <label class="сontact-details__label">
             <span class="сontact-details__span">e-mail:<sup>*</sup></span> <input class="сontact-details__input" type="text" name="e-mail" value="kuklachev@gmail.com" required>
           </label>
-          <label class="сontact-details__label" for="">
+          <label class="сontact-details__label">
             <span class="сontact-details__span">телефон:<sup>*</sup></span> <input class="сontact-details__input" type="number" name="телефон" value="8 (960) 900-60-90" required>
           </label>
         </form>
@@ -88,14 +91,14 @@
       <h3 class="page-section__title">Комментарий</h3>
       <div class="page-section__wrapper wrapper">
         <form class="page__form comment" action="https://echo.htmlacademy.ru" method="post">
-          <label class="comment__label" for="">
+          <label class="comment__label">
             <textarea class="comment__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
           </label>
         </form>
       </div>
     </section>
 
-    <section class="page-section">
+    <section class="page-section page-section--lc">
       <h3 class="page-section__title">Дополнительно</h3>
       <div class="page-section__wrapper wrapper">
         <form class="page__form additionally" action="https://echo.htmlacademy.ru" method="post">
@@ -120,11 +123,12 @@
 
   <section class="map">
     <div class="address">
-      <b class="address__text">Приглашаем сотрудничеству дилеров!</b>
-      <span class="address__title address__title--street">ул. Большая Конюшенная, д. 19/8</span>
-      <span class="address__title address__title--town">Санкт-Петербург</span>
+      <span class="address__text">Приглашаем сотрудничеству дилеров!</span>
+      <span class="address__title address__title--street">ул. Большая Конюшенная, д. 19/8
+        <span class="address__title address__title--town">Санкт-Петербург</span>
+      </span>
     </div>
-    <div class="map__wrapper">
+    <div class="map__card">
       <img class="map__card-image" src="img/bg-map-mobile@1x.png" alt="карта с расположением офиса компании">
       <img class="map__mark-image" src="img/map-pin.png" alt="метка на карте">
     </div>
