@@ -8,6 +8,10 @@
   // border: 2px solid black;
 }
 
+.page-header--form {
+
+}
+
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -79,6 +83,7 @@
     margin-bottom: 46px;
     border-bottom: none;
   }
+
   .page-header__wrapper {
     margin-top: 13px;
     width: 92.5%;
@@ -100,17 +105,22 @@
 
 @media (min-width: @desktop-width) {
   .page-wrapper {
-    background: url(../../img/index-background-desktop@1x.jpg) 100% 50% no-repeat;
-    min-height: 696px;
+    width: 1440px;
+    margin: 0 auto;
     margin-bottom: 80px;
+    background: url("../../img/index-background-desktop@1x.jpg") 100% 50% no-repeat;
+    min-height: 696px;
+
+    // border: 1px solid #ddd000;
   }
 
   .page-header {
     padding-top: 42px;
     margin-bottom: 14px;
   }
+
   .page-header__wrapper {
-    width: 84.72%;
+    width: 1220px;
 
     // border: 1px solid black;
   }

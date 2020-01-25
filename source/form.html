@@ -8,125 +8,137 @@
   </head>
   <body>
 
-    <header class="page-header page-header--mb">
-      <div class="page-header__top">
+    <header class="page-header page-header--no-index">
+      <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src=img/logo-mobile.svg alt="логотип сайта cat energy">
         </a>
         <button class="page-header__toggle menu-toggle menu-toggle--closed"></button>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Подбор программы</a>
+              </li>
+            </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
     </header>
 
-  <!-- <main class="page-main"> -->
-    <!-- не переделано почти ничего -->
     <div class="greeting-page">
-      <div class="greeting-page__wrapper wrapper">
-        <h2 class="page-title">Подбор программы</h2>
-        <p class="greeting-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      </div>
+      <h2 class="page-title page-title--form">Подбор программы</h2>
+      <p class="greeting-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     </div>
 
-    <section class="questionnaire">
-      <div class="questionnaire__wrapper wrapper">
-        <form class="page__form  personal-data" action="https://echo.htmlacademy.ru" method="post">
-          <label class="personal-data__label">
-            <span class="personal-data__span">имя:<sup>*</sup></span> <input class="personal-data__input" type="text" value="Барсик" name="имя" required>
-          </label>
-          <label class="personal-data__label">
-            <span class="personal-data__span">вес (кг):<sup>*</sup></span> <input class="personal-data__input" type="number" value="7" name="вес (кг)" required>
-          </label>
-          <label class="personal-data__label">
-            <span class="personal-data__span">возраст (лет):<sup>*</sup></span> <input class="personal-data__input" type="number" value="7"  name="возраст (лет)" required>
-          </label>
-        </form>
-      </div>
-    </section>
+    <main class="profile">
+      <section class="questionnaire">
+        <div class="questionnaire__wrapper">
+          <form class="page__form  personal-data" action="https://echo.htmlacademy.ru" method="post">
+            <label class="personal-data__label">
+              <span class="personal-data__span">имя:<sup>*</sup></span>
+              <input class="personal-data__input" type="text" value="Барсик" name="имя" required>
+            </label>
+            <label class="personal-data__label">
+              <span class="personal-data__span">вес (кг):<sup>*</sup></span>
+              <input class="personal-data__input" type="number" value="7" name="вес (кг)" required>
+            </label>
+            <label class="personal-data__label">
+              <span class="personal-data__span">возраст (лет):<sup>*</sup></span>
+              <input class="personal-data__input" type="number" value="7"  name="возраст (лет)" required>
+            </label>
+          </form>
+        </div>
+      </section>
 
-    <section class="profile-checkboxes">
-      <div class="profile-checkboxes__wrapper wrapper">
-        <form class="page__form checkboxes" action="https://echo.htmlacademy.ru" method="post">
-          <label class="checkboxes__label">
-            <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__circle"></span> <span class="checkboxes__span">похудение</span>
-          </label>
-          <label class="checkboxes__label" class="checkboxes__label">
-            <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__circle"></span> <span class="checkboxes__span">набор массы</span>
-          </label>
-          <label class="checkboxes__label">
-            <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__circle"></span> <span class="checkboxes__span">не знаю (нужен ваш совет)</span>
-          </label>
-        </form>
-      </div>
-    </section>
+      <section class="profile-checkboxes">
+        <div class="profile-checkboxes__wrapper">
+          <form class="page__form checkboxes" action="https://echo.htmlacademy.ru" method="post">
+            <label class="checkboxes__label">
+              <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__circle"></span>
+              <span class="checkboxes__span">похудение</span>
+            </label>
+            <label class="checkboxes__label">
+              <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__circle"></span>
+              <span class="checkboxes__span">набор массы</span>
+            </label>
+            <label class="checkboxes__label">
+              <input class="checkboxes__input" type="checkbox"> <span class="checkboxes__circle"></span>
+              <span class="checkboxes__span">не знаю (нужен ваш совет)</span>
+            </label>
+          </form>
+        </div>
+      </section>
+    </main>
 
-    <section class="page-section">
-      <h3 class="page-section__title">Контактные данные (владельца кота)</h3>
-      <div class="page-section__wrapper wrapper">
-        <form class="page__form сontact-details" action="https://echo.htmlacademy.ru" method="post">
+    <section class="сontact-details page-section">
+      <h3 class="сontact-details__title page-section__title">Контактные данные (владельца кота)</h3>
+      <div class="сontact-details__wrapper page-section__wrapper">
+        <form class="сontact-details__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="сontact-details__label">
-            <span class="сontact-details__span">e-mail:<sup>*</sup></span> <input class="сontact-details__input" type="text" name="e-mail" value="kuklachev@gmail.com" required>
+            <span class="сontact-details__span">e-mail:<sup>*</sup></span>
+            <input class="сontact-details__input" type="text" name="e-mail" value="kuklachev@gmail.com" required>
           </label>
           <label class="сontact-details__label">
-            <span class="сontact-details__span">телефон:<sup>*</sup></span> <input class="сontact-details__input" type="number" name="телефон" value="8 (960) 900-60-90" required>
+            <span class="сontact-details__span">телефон:<sup>*</sup></span>
+            <input class="сontact-details__input" type="number" name="телефон" value="8(960)900-60-90" required>
           </label>
         </form>
       </div>
     </section>
 
-    <section class="page-section">
-      <h3 class="page-section__title">Комментарий</h3>
-      <div class="page-section__wrapper wrapper">
-        <form class="page__form comment" action="https://echo.htmlacademy.ru" method="post">
+    <section class="comment page-section">
+      <h3 class="comment__title page-section__title">Комментарий</h3>
+      <div class="comment__wrapper page-section__wrapper">
+        <form class="comment__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="comment__label">
-            <textarea class="comment__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
+            <textarea class="comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </form>
       </div>
     </section>
 
-    <section class="page-section page-section--lc">
-      <h3 class="page-section__title">Дополнительно</h3>
-      <div class="page-section__wrapper wrapper">
-        <form class="page__form additionally" action="https://echo.htmlacademy.ru" method="post">
-          <label class="additionally__label">
-            <input class="additionally__input" type="checkbox" name="Сахарозаменитель"><span class="check-mark"></span> <span class="additionally__span">Сахарозаменитель</span>
-          </label>
-          <label class="additionally__label">
-            <input class="additionally__input" type="checkbox" name="Питьевая вода"><span class="check-mark"></span> <span class="additionally__span">Питьевая вода</span>
-          </label>
-          <label class="additionally__label">
-            <input class="additionally__input" type="checkbox" name="Молоко"><span class="check-mark"></span> <span class="additionally__span">Молоко</span>
-          </label>
-          <label class="additionally__label additionally__label--last-child">
-            <input class="additionally__input" type="checkbox" name="витамины"><span class="check-mark"></span> <span class="additionally__span">Витамины</span>
-          </label>
+    <section class="additionally page-section">
+      <h3 class="additionally__title page-section__title">Дополнительно</h3>
+      <div class="additionally__wrapper page-section__wrapper">
+        <form class="additionally__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="wrapper-form-additionally">
+            <label class="additionally__label">
+              <input class="additionally__input" type="checkbox" name="Сахарозаменитель">
+              <span class="check-mark"></span>
+              <span class="additionally__span">Сахарозаменитель</span>
+            </label>
+            <label class="additionally__label">
+              <input class="additionally__input" type="checkbox" name="Питьевая вода">
+              <span class="check-mark"></span>
+              <span class="additionally__span">Питьевая вода</span>
+            </label>
+            <label class="additionally__label">
+              <input class="additionally__input" type="checkbox" name="Молоко">
+              <span class="check-mark"></span>
+              <span class="additionally__span">Молоко</span>
+            </label>
+            <label class="additionally__label additionally__label--last-child">
+              <input class="additionally__input" type="checkbox" name="витамины">
+              <span class="check-mark"></span>
+              <span class="additionally__span">Витамины</span>
+            </label>
+          </div>
             <input class="feedback__button button" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
-          <span class="feedback__span"><sup>*</sup>&#8211 Обязательное поле</span>
+          <span class="feedback__span"><sup>*</sup> &#8211; Обязательное поле</span>
         </form>
       </div>
     </section>
-
 
   <section class="map">
     <div class="address">
-      <span class="address__text">Приглашаем сотрудничеству дилеров!</span>
-      <span class="address__title address__title--street">ул. Большая Конюшенная, д. 19/8
-        <span class="address__title address__title--town">Санкт-Петербург</span>
-      </span>
+      <span class="address__text">Принлашаем к сотрудничеству дилеров!</span>
+      <span class="address__title address__title--street">ул. Большая Конюшенная, д. 19/8</span>
+      <span class="address__title address__title--town">Санкт-Петербург</span>
     </div>
     <div class="map__card">
       <img class="map__card-image" src="img/bg-map-mobile@1x.png" alt="карта с расположением офиса компании">
@@ -134,26 +146,27 @@
     </div>
   </section>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper wrapper">
-        <a class="page-footer__title cat-energy" href="index.html"></a>
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"></a>
-          </li>
-          <li class="social__item">
-            <a  class="social__link social__link--inst" href="https://www.facebook.com/htmlacademy"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="https://www.instagram.com/htmlacademy"></a>
-          </li>
-        </ul>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+  <footer class="page-footer">
+    <ul class="page-footer__list">
+      <li class="page-footer__item cat-energy">
+        <a class="page-footer__title" href="#"></a>
+      </li>
+      <li class="page-footer__item social">
+        <div class="social__wrapper">
+          <a class="social__link social__link--vk" href="#"></a>
+          <a  class="social__link social__link--inst" href="https://www.facebook.com/htmlacademy"></a>
+          <a class="social__link social__link--fb" href="https://www.instagram.com/htmlacademy"></a>
         </div>
-      </div>
-    </footer>
+      </li>
+      <li class="page-footer__item copyright">
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </li>
+    </ul>
+  </footer>
+  <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d732.1822614940036!2d30.32275068983257!3d59.93879031725574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1579773429138!5m2!1sru!2sby"
+    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+  </iframe></div>
 
     <script>
       var navMain = document.querySelector('.main-nav');

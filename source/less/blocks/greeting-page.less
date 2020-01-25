@@ -1,12 +1,47 @@
 .greeting-page {
-  margin-bottom: 39px;
+  width: 87.5%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  // border: 1px solid #000;
 }
 
 .page-title--form {
-  border: none;
+  margin-bottom: 35px;
 }
 
 .greeting-page__text {
+  width: 230px;
   line-height: 1.29;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .greeting-page {
+    width: 91.7%;
+    margin-bottom: 70px;
+
+    // border: 1px solid #000;
+ }
+
+  .page-title--form {
+    margin-bottom: 50px;
+  }
+
+  .greeting-page__text {
+    width: 325px;
+    margin-left: 5.4%;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .greeting-page {
+    width: 1220px;
+  }
+
+  .greeting-page__text {
+    margin-left: 0;
+  }
 }

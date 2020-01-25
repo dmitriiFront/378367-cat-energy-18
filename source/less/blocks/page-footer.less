@@ -1,44 +1,58 @@
 .page-footer {
-  padding: 39px 0 19px;
   background-color: @darker-white;
+}
+
+.page-footer__list {
+  width: 87.5%;
+  margin: 0 auto;
+  // border: 1px solid #0eee00;
+}
+
+.page-footer__item {
+  border-bottom: 1px solid #dadada;
+
+  &:last-child {
+    // border: none;
+  }
+}
+
+.cat-energy {
+  padding: 39px 0 31px;
+
+  // border: 1px solid #000;
 }
 
 .page-footer__title {
   display: block;
-  background: url("../../img/logo-footer.svg") no-repeat;
   width: 128px;
   height: 24px;
-  margin: 0 auto 31px;
+  margin: 0 auto;
+  background: url("../../img/logo-footer.svg") no-repeat;
   background-size: 128px 24px;
+
+  // border: 1px solid #000;
 }
 
-.page-footer__social {
+.social__wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  // padding: 24px 75px 21px 65px;
-  padding: 20px 0 15px;
-  // падинги временны, лучше сделать флексами!!!!!!!!!!!!!
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  // ИЗМЕНИТЬ ЦВЕТ НИЖНЕГО БОРДЕРА!!!!!!!
+  width: 135px;
+  margin: 0 auto;
+  padding: 17px 0 16px;
+  // border: 1px solid #000;
 }
 
-.social__item {
-  display: inline-block;
-  margin-right: 27px;
+.social__link {
+  padding: 5px;
 
+  // border: 1px solid #dad000;
   &:last-child {
     margin-right: 0;
   }
 }
 
-.social__link {
-  padding: 5px;
-}
-
 .social__link--vk {
-  display: inline-block;
   background: url("../../img/icon-vk.svg") no-repeat;
   background-size: 22px 12px;
   width: 22px;
@@ -46,7 +60,6 @@
 }
 
 .social__link--inst {
-  display: inline-block;
   background: url("../../img/icon-insta.svg") no-repeat;
   background-size: 17px 17px;
   width: 17px;
@@ -54,23 +67,21 @@
 }
 
 .social__link--fb {
-  display: inline-block;
   background: url("../../img/icon-fb.svg") no-repeat;
   background-size: 10px 19px;
   width: 10px;
   height: 19px;
 }
 
-.page-footer__copyright {
-  padding-top: 19px;
+.copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 19px 0;
 }
 
 .copyright__text {
-  margin-right: 10px;
-  padding: 3px;
+  padding: 3px 3px 10px;
   font-size: 16px;
   color: @greyish;
   font-family: @spare-font;
@@ -83,4 +94,69 @@
   padding: 3px;
   background: url("../../img/htmlacademy.svg") no-repeat;
   background-size: 27px 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    padding: 55px 0;
+  }
+
+  .page-footer__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92.19%;
+    margin: 0 auto;
+    // border: 1px solid #0eee00;
+  }
+
+  .page-footer__item {
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+
+    // border: 1px solid #0fff00;
+
+    &:last-child {
+      // border: none;
+    }
+  }
+
+  .social__wrapper {
+    width: 125px;
+    padding: 0;
+  }
+
+  .social__link--vk {
+    background-size: 30px 16px;
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link--inst {
+    background-size: 23px 23px;
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link--fb {
+    background-size: 14px 28px;
+    width: 14px;
+    height: 28px;
+  }
+
+  .copyright {
+    width: 162px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 57px 0 53px;
+  }
+
+  .page-footer__list {
+    width: 84.72%;
+    // border: 1px solid #0eee00;
+  }
 }

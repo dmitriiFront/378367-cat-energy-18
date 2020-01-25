@@ -3,7 +3,15 @@
   background: @darker-white;
 }
 
+.example__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+
+  // border: 1px solid #000;
+}
+
 .example__title {
+  margin-left: 5.88%;
   margin-bottom: 33px;
   font-size: 36px;
   // line-height: 1.67;
@@ -15,21 +23,25 @@
   font-family: @spare-font;
   line-height: 1.29;
   color: @greyish;
+
+  // border: 1px solid red;
 }
 
 .wrapper-flex {
   display: flex;
   justify-content: space-between;
-  // border: 1px solid red;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+
+  // border: 1px solid #000;
 }
 
 .example__item {
-  // display: inline-block;
   position: relative;
   display: flex;
   box-sizing: border-box;
-  width: 124px;
+  // width: (124/280)*100%;
+  width: 44.28%;
+  // width: 124px;
   height: 56px;
   margin-right: 14px;
   border: 1px solid @pinkish-grey;
@@ -52,20 +64,25 @@
   // display: none;
   display: block;
   position: absolute;
+  // box-sizing: border-box;
+  // !!!!!!!!!!!
   top: 84%;
-  left: 15px;
-  width: 67px;
+  left: 20.5%;
+  // width: (54/124)*100%;
+  width: 43.55%;
   height: 21px;
-  padding: 0 10px;
-
+  padding: 0 12.9%;
+  padding-top: 3px;
   font-family: @spare-font;
   font-size: 12px;
   text-align: center;
   color: @greyish;
   background-color: @darker-white;
 
+  // border: 1px solid red;
+
   &:last-child {
-    left: 17px;
+    left: 15%;
   }
 }
 
@@ -76,21 +93,256 @@
   text-transform: uppercase;
 }
 
+.example__change {
+  margin: 0 auto;
+  width: 320px;
+
+  // border: 1px solid #000;
+}
+
 .example__image {
+  display: block;
   width: 311px;
   height: 232px;
-  background-size: 311px 232px;
   margin-bottom: 35px;
 }
 
 .example__control {
-  display: block;
-  margin-left: 44px;
-  // отступы верные, из-за шрифта все рушится!!!!!!!!!!!
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin: 0 auto;
+
+  // border: 1px solid aqua;
 }
 
 .control__item {
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
+}
+
+.control__changing {
+  flex-grow: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    padding: 0;
+    padding-bottom: 0;
+    background: transparent;
+    // background: @darker-white;
+  }
+
+  .example__wrapper {
+    position: relative;
+    width: 92.19%;
+    margin-bottom: 255px;
+  }
+
+  .example__title {
+    margin-left: 3.9%;
+    margin-bottom: 60px;
+    font-size: 60px;
+  }
+
+  .example__text {
+    margin-bottom: 55px;
+    font-size: 16px;
+    font-family: @spare-font;
+    line-height: 1.5;
+    color: @greyish;
+  }
+
+  .example__wrapper-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // border: 1px solid red;
+  }
+
+  .wrapper-flex {
+    width: 368px;
+    margin-bottom: 0;
+
+    // border: 1px solid red;
+  }
+
+  .example__item {
+    display: block;
+    width: 162px;
+    height: 72px;
+    padding: 22px 58px 24px;
+    margin-right: 42px;
+
+    &:last-child {
+      padding: 22px 31px 18px;
+    }
+  }
+
+  .index__item {
+    display: block;
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .index__desc {
+    background-color: transparent;
+  }
+
+  .example__expenses {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1;
+    text-align: right;
+  }
+
+  .expenses__text,
+  .expenses__number {
+    display: block;
+  }
+
+  .expenses__text {
+    margin-bottom: 11px;
+  }
+
+  .example__change {
+    position: relative;
+    margin: 0;
+    width: auto;
+    min-height: 462px;
+    background: @darker-white;
+
+    // border: 1px solid red;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 462px;
+      width: 50%;
+      background: #eaeaea;
+    }
+  }
+
+  .example__image {
+    position: absolute;
+    top: -151px;
+    left: 6%;
+    right: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 677px;
+    height: 499px;
+    margin-bottom: 0;
+
+    // border: 1px solid #ddd000;
+  }
+
+  .example__control {
+    position: absolute;
+    bottom: 70px;
+    left: 12.8%;
+    right: 12.8%;
+    width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+    // отступы верные, из-за шрифта все рушится!!!!!!!!!!!
+  }
+
+  .control__item {
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+
+  .control__changing {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+
+  .example__wrapper-main {
+    display: flex;
+    background: @darker-white;
+
+    // border: 1px solid chartreuse;
+  }
+
+  .example__wrapper {
+    width: 430px;
+    margin-bottom: 0;
+    margin-left: 110px;
+  }
+
+  .example__title {
+    margin-left: 110px;
+    margin-bottom: 65px;
+    font-size: 60px;
+  }
+
+  .example__text {
+    margin-top: 76px;
+
+    margin-bottom: 70px;
+  }
+
+  .example__wrapper-data {
+    display: block;
+  }
+
+  .wrapper-flex {
+    width: 368px;
+    margin-bottom: 62px;
+  }
+
+  .index__desc {
+    background-color: @darker-white;
+  }
+
+  .example__expenses {
+    width: 334px;
+    text-align: left;
+  }
+
+  .expenses__text,
+  .expenses__number {
+    display: inline;
+  }
+
+  .expenses__text {
+    margin-right: 64px;
+  }
+
+  .example__change {
+    width: 27.4%;
+    background: #eaeaea;
+
+    // border: 1px solid red;
+  }
+
+
+  .example__image {
+    top: -172px;
+    left: -365px;
+  }
+
+  .example__control {
+    position: absolute;
+
+    top: 370px;
+    left: -330px;
+  }
 }

@@ -2,9 +2,20 @@
   // border: 1px solid   red;
 }
 
+.greeting-site__wrapper-bg {
+  background-color: @lightGreen;
+  min-height: 305px;
+  margin-bottom: 135px;
+
+  // border: 1px solid chartreuse;
+}
+
 .greeting-site__wrapper {
+  position: relative;
+  box-sizing: border-box;
   padding-top: 25px;
   width: 320px;
+  height: 305px;
   margin: 0 auto;
   background: url("../../img/index-background-mobile@1x.jpg") no-repeat;
   background-size: 320px 305px;
@@ -28,9 +39,13 @@
 }
 
 .greeting-site__image {
+  position: absolute;
+  bottom: -135px;
+  left: 20px;
   width: 280px;
   height: 270px;
-  background-size: 280px 270px;
+
+  // border: 1px solid #000;
 }
 
 .greeting-site__button {
@@ -44,12 +59,16 @@
   .greeting-site {
     position: relative;
     padding: 0;
+  }
 
-    // для наглядности!!!!!!
-    // background-color: white;
+  .greeting-site__wrapper-bg {
+    background-color: transparent;
+    height: auto;
+    margin-bottom: 0;
   }
 
   .greeting-site__wrapper {
+    position: static;
     width: 709px;
     min-height: 810px;
     margin: 0 30px;
@@ -103,18 +122,20 @@
 
   .greeting-site__wrapper {
     // мб width: 930px??????????
+    // box-sizing: border-box;
     width: 925px;
     min-height: 500px;
     margin-left: 190px;
+    padding-top: 84px;
 
     // не переделано
     background: url("../../img/index-can-desktop@1x.png") 100% 50% no-repeat;
     background-size: 552px 500px;
+
     // border: 1px solid yellow;
   }
 
   .greeting-site__title {
-    margin-top: 84px;
     padding-left: 0;
   }
 

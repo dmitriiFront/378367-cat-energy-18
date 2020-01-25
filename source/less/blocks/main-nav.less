@@ -28,7 +28,7 @@
 @media (min-width: @tablet-width) {
   .main-nav {
     display: block;
-    // display: flex;d q
+    // display: flex;d
     // align-self: center;
     // height: 60px;
     width: 440px;
@@ -49,10 +49,9 @@
     color: #222222;
     font-size: 18px;
     font-weight: 400;
-    line-height: 24.86px;
+    line-height: 1.39;
     text-transform: uppercase;
   }
-
 }
 
 @media (min-width: @desktop-width) {
@@ -61,10 +60,13 @@
     // background-color: seagreen;
   }
 
-  .site-list__item{
+  .site-list__item {
     font-size: 20px;
-    line-height: 24.86px;
-    color: #ffffff;
+    line-height: 1.25;
   }
 
+  .page-header--index .site-list__item a {
+    // иначе не хочет!!!!;
+    color: @white;
+  }
 }

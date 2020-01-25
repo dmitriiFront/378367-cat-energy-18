@@ -3,56 +3,109 @@
 }
 
 .page-title {
-  padding-bottom: 35px;
   font-size: 36px;
+  line-height: 60px;
 }
 
 .page-title--catalog {
-  padding-left: 20px;
-  border-bottom: 1px solid @light-grey;
+  margin-left: 5.88%;
+  padding: 32px 0 35px;
 }
 
 .catalog__item {
-  padding: 25px 0 25px;
+  padding-bottom: 25px;
   border-bottom: 1px solid @light-grey;
+
+  &:first-child {
+    border-top: 1px solid @light-grey;
+  }
+}
+
+.catalog__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 87.5%;
+  margin: 0 auto;
+
+  // border: 1px solid #000;
 }
 
 .catalog__image {
   width: 140px;
   height: 144px;
-  background-size: 140px 144px;
+  // background-size: 140px 144px;
+  margin: 0 auto;
+
+  // border: 1px solid red;
+}
+
+.catalog__data {
+  width: 50%;
+  padding: 22px 0 18px;
+
+  // border: 1px solid fuchsia;
 }
 
 .catalog__name {
-  margin-bottom: 18px;
+  display: block;
+  // margin-top: 22px;
+  width: 73px;
+  margin-bottom: 12px;
   font-size: 16px;
   line-height: 1.25;
+
+  // border: 1px solid #000;
 }
 
 .catalog__characteristics {
-  margin-bottom: 18px;
+  // пока не ясно!!!!!!1
+  // margin-bottom: 18px;
+  width: 100%;
+  border-spacing: 0;
   font-size: 12px;
   line-height: 1.33;
   font-family: @spare-font;
   color: @greyish;
+
+  // border: 1px solid red;
+}
+
+.characteristics__tr {
+  display: flex;
+  justify-content: space-between;
+
+  // border: 1px solid #000;
+}
+
+.characteristics__item {
+  padding: 0;
 }
 
 .catalog__button {
-  width: 280px;
+  width: 87.5%;
   height: 40px;
+  margin: 0 auto;
   font-size: 16px;
   line-height: 1.25;
   color: @white;
 }
 
+// доп-секция
 .show-all {
   padding-top: 27px;
 }
 
+.show-all__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .show-all__image {
-  width: 31px;
-  height: 31px;
-  background-size: 31px 31px;
+  width: 30px;
+  height: 30px;
+  // background-size: 30px 30px;
   margin-bottom: 25px;
 }
 
@@ -62,6 +115,7 @@
   margin-bottom: 11px;
   font-size: 16px;
   line-height: 1.25;
+  text-transform: uppercase;
 }
 
 .show-all__text {
@@ -74,7 +128,207 @@
 }
 
 .show-all__button {
+  width: 100%;
   background: @light-grey;
   line-height: 1.25;
   color: @greyish;
+}
+
+
+
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: 92.19%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+
+    // border: 1px solid #002320;
+  }
+
+  .page-title--catalog {
+    margin: 0;
+    margin-bottom: 120px;
+    font-size: 60px;
+  }
+
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    border: 1px solid blue;
+  }
+
+  .catalog__item {
+    position: relative;
+    // width: 324/708*100%;
+    width: 45.76%;
+    padding-top: 165px;
+    margin-bottom: 140px;
+    padding-bottom: 40px;
+    background-color: @darker-white;
+    // занулить у последних двух!!!!!!!!!!!!!!!!!!!
+
+    &:last-child,
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog__wrapper {
+    display: block;
+    // width: 250/324*100%;
+    width: 77.16%;
+    margin-bottom: 33px;
+  }
+
+  .catalog__image {
+    position: absolute;
+
+    top: -46px;
+// узнать у Ромы  , как сцертрировать!!!!!!!!
+    left: 25%;
+    // right: 24%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 161px;
+    height: 172px;
+    // background-size: 140px 144px;
+    margin: 0;
+    background: transparent;
+    border: 1px solid red;
+  }
+
+  .catalog__image--2 {
+    top: -84px;
+    left: 20%;
+    width: 195px;
+    height: 208px;
+  }
+
+  .catalog__data {
+    width: auto;
+    padding: 0;
+  }
+
+  .catalog__name {
+    width: 124px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+// таблица
+  .catalog__characteristics {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .characteristics__tr {
+    border-bottom: 1px solid @pinkish-grey;
+    padding: 9px 0 9px;
+
+    // border: 1px solid #000;
+  }
+
+  .characteristics__item {
+    padding: 0;
+  }
+//
+  .catalog__button {
+    width: 77.16%;
+  }
+
+// доп-секция
+  .show-all {
+    padding-top: 55px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  // повторение кода. видимо, где-то переопределяется выше
+  .show-all__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show-all__image {
+    width: 60px;
+    height: 60px;
+    // background-size: 60px 60px;
+    margin-bottom: 50px;
+  }
+
+  .show-all__name {
+    width: 140px;
+    margin-bottom: 26px;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .show-all__text {
+    width: 170px;
+    margin-bottom: 90px;
+    font-size: 16px;
+  }
+
+  .show-all__button {
+    width: 100%;
+  }
+}
+
+
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
+  .catalog__list {
+    // border: 1px solid blue;
+  }
+
+  .catalog__item {
+    width: 245px;
+    // занулить у последних двух!!!!!!!!!!!!!!!!!!!
+
+    &:nth-last-child(3),
+    &:nth-last-child(4) {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog__wrapper {
+    width: 170px;
+  }
+
+  .catalog__image {
+    top: -46px;
+// узнать у Ромы, как сцертрировать!!!!!!!!
+    left: 45px;
+    // right: 24%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .catalog__image--2 {
+    top: -84px;
+    left: 29px;
+    // width: 195px;
+    // height: 208px;
+  }
+
+// доп-секция
+  .show-all {
+    border: 1px solid #cdcdcd;
+  }
+
 }
