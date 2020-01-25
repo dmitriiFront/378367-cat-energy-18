@@ -3,6 +3,7 @@
   width: 87.5%;
   margin: 0 auto;
   margin-bottom: 30px;
+
   // border: 1px solid black;
 }
 
@@ -122,7 +123,8 @@
 
 @media (min-width: @desktop-width) {
   .services {
-    width: 84.72%;
+    width: 1220px;
+    margin: 0 auto;
     margin-bottom: 77px;
   }
 
@@ -133,9 +135,15 @@
 
   .services__item {
     box-sizing: border-box;
-    width: 46.7%;
+    box-sizing: border-box;
+    width: 570px;
     padding: 40px 56px 62px 52px;
     margin-bottom: 0;
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .service__image {

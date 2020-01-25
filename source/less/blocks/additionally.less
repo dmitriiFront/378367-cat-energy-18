@@ -1,3 +1,7 @@
+.additionally {
+  margin-bottom: 34px;
+}
+
 .additionally__label {
   display: flex;
   align-items: center;
@@ -30,9 +34,10 @@
   display: block;
   position: absolute;
   top: 7px;
-  left: 6px;
-  width: 22px;
-  height: 17px;
+  left: 5px;
+  width: 21px;
+  height: 16px;
+  // поменять цвет галочки!!!!!!!!!: 1;
   background: url("../../img/icon-tick.svg") no-repeat;
   background-size: 22px 17px;
 }
@@ -45,14 +50,103 @@
 }
 
 .feedback__button {
-  width: 280px;
+  width: 100%;
   height: 40px;
   margin-bottom: 23px;
 }
 
 .feedback__span {
   display: block;
+  font-family: @spare-font;
   line-height: 1.14;
   text-align: center;
   color: @greyish;
+}
+
+
+@media (min-width: @tablet-width) {
+  .additionally {
+    margin-bottom: 72px;
+  }
+
+  .additionally__title {
+    margin-bottom: 32px;
+  }
+
+  .wrapper-form-additionally {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    min-height: 110px;
+    margin-bottom: 54px;
+
+    // border: 1px solid blue;
+  }
+
+  .additionally__label {
+    min-width: 220px;
+    margin-right: 80px;
+    margin-bottom: 0;
+
+    // border: 1px solid #000;
+
+    &:last-child,
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .check-mark {
+    margin-right: 19px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .additionally__input:checked + .check-mark::before {
+    top: 12px;
+    left: 10px;
+  }
+
+  .additionally__span {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .feedback__button {
+    display: inline-block;
+    width: 44.6%;
+    height: 52px;
+    margin-bottom: 0;
+    margin-right: 60px;
+    text-align: 20px;
+  }
+
+  .feedback__span {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .additionally {
+    margin-bottom: 82px;
+  }
+
+  .additionally__title {
+    margin-bottom: 53px;
+  }
+
+  .wrapper-form-additionally {
+    min-height: auto;
+    margin-bottom: 60px;
+  }
+
+  .feedback__button {
+    width: 568px;
+    margin-right: 82px;
+  }
 }
