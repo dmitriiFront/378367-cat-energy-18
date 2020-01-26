@@ -17,11 +17,11 @@
   border-bottom: 1px solid @light-grey;
 
   &:first-child {
-    border-top: 1px solid @light-grey;
+    // border-top: 1px solid @light-grey;
   }
 }
 
-.catalog__wrapper {
+.catalog__item-wrapper {
   display: flex;
   justify-content: space-between;
 
@@ -31,6 +31,13 @@
   // border: 1px solid #000;
 }
 
+.catalog__title {
+  padding-bottom: 30px;
+  padding-left: 20px;
+  font-size: 24px;
+  text-align: left;
+  border-bottom: 1px solid @light-grey;
+}
 .catalog__image {
   width: 140px;
   height: 144px;
@@ -58,11 +65,10 @@
   // border: 1px solid #000;
 }
 
-.catalog__characteristics {
-  // пока не ясно!!!!!!1
+// таблица!!!!!!!!!!!1
+.characteristics {
   // margin-bottom: 18px;
   width: 100%;
-  border-spacing: 0;
   font-size: 12px;
   line-height: 1.33;
   font-family: @spare-font;
@@ -128,7 +134,7 @@
 }
 
 .show-all__button {
-  width: 100%;
+  width: 87.5%;
   background: @light-grey;
   line-height: 1.25;
   color: @greyish;
@@ -176,7 +182,7 @@
     }
   }
 
-  .catalog__wrapper {
+  .catalog__item-wrapper {
     display: block;
     // width: 250/324*100%;
     width: 77.16%;
@@ -222,7 +228,7 @@
   }
 
 // таблица
-  .catalog__characteristics {
+  .characteristics {
     font-size: 16px;
     line-height: 1;
   }
@@ -279,7 +285,7 @@
   }
 
   .show-all__button {
-    width: 100%;
+    width: 77.16%;
   }
 }
 
@@ -306,7 +312,7 @@
     }
   }
 
-  .catalog__wrapper {
+  .catalog__item-wrapper {
     width: 170px;
   }
 

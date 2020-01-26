@@ -1,0 +1,291 @@
+.further {
+  margin-bottom: 35px;
+
+  // border: 1px solid #000;
+}
+
+.further__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 5.88%;
+  font-size: 24px;
+
+  &::after {
+    content: "";
+    width: 16.6%;
+    flex-grow: 1;
+    height: 3px;
+    margin-left: 24px;
+    background-color: @lightGreen;
+  }
+}
+
+.further__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+
+  // border: 1px solid red;
+}
+
+.further__list {
+  margin-bottom: 40px;
+}
+
+.further__item {
+  padding: 15px 0 15px;
+  border-bottom: 1px solid @light-grey;
+
+  &:first-child {
+    border-top: 1px solid @light-grey;
+  }
+}
+
+.further__item-wrapper {
+  margin-bottom: 15px;
+
+  // border: 1px solid yellow;
+}
+
+.further__name {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.characteristics__tr--indent {
+  padding: 0;
+  border: none;
+}
+
+.further__button {
+  width: 100%;
+  height: 40px;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11
+.banner {
+  width: 100%;
+  background-color: @lightGreen;
+}
+
+.banner__wrapper-bg {
+  width: 280px;
+  min-height: 289px;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  background-size: 280px 289px;
+  margin: 0 auto;
+
+  // border: 1px solid #122323;
+}
+
+.banner__wrapper {
+  margin: 0 auto;
+  width: 165px;
+  padding-top: 65px;
+
+  // border: 1px solid red;
+}
+
+.banner__gift {
+  width: 56px;
+  height: 61px;
+  margin: 0 auto 64px;
+  background: url("../img/icon-gift.svg") no-repeat;
+  background-size: 56px 61px;
+
+  // border: 1px solid #000;
+}
+
+.banner__text {
+  // перенести "и" на следующую строку!!!!!
+  font-family: @spare-font;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: @white;
+
+  // border: 1px solid red;
+}
+
+
+
+@media (min-width: @tablet-width) {
+  .further {
+    margin-bottom: 75px;
+  }
+
+  .further__title {
+    margin-bottom: 75px;
+    margin-left: 0;
+    font-size: 36px;
+
+    &::after {
+      margin-left: 38px;
+    }
+
+    &::before {
+      content: "";
+      width: 28px;
+      // flex-grow: 1;
+      height: 3px;
+      margin-right: 38px;
+      background-color: @lightGreen;
+    }
+  }
+
+  // мб этим выступит ul-ка!!!!!!!!!11
+  .further__wrapper {
+    width: 92.19%;
+  }
+
+  .further__list {
+    margin-bottom: 70px;
+    border-right: 1px solid @light-grey;
+    border-left: 1px solid @light-grey;
+  }
+
+  .further__item {
+    padding: 26px 0 26px;
+  }
+
+  .further__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 89.3%;
+    margin: 0 auto;
+    margin-bottom: 26px;
+
+    // border: 1px solid #055500;
+  }
+
+  .further__name {
+    margin-bottom: 0;
+  }
+
+  .furter__characteristics {
+    width: 32%;
+    margin-bottom: 0;
+    font-size: 16px;
+
+    // border: 1px solid #444000;
+  }
+
+  .further__button {
+    width: 89.3%;
+    margin: 0 auto;
+    height: 40px;
+  }
+
+ // Баннер
+  .banner__wrapper-bg {
+    width: 708px;
+    min-height: 200px;
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+    background-size: 708px 200px;
+    margin: 0 auto;
+  }
+
+  .banner__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 520px;
+  }
+
+  .banner__gift {
+    margin: 0;
+    // margin-right: 275px;
+  }
+
+  .banner__text {
+    width: 170px;
+    margin-right: 35px;
+    // перенести "и" на следующую строку!!!!!
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .further {
+    width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 85px;
+  }
+
+  .further__title {
+
+    &::before {
+      width: 70px;
+    }
+  }
+
+  // мб этим выступит ul-ка!!!!!!!!!11
+  .further__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
+
+  .further__list {
+    width: 896px;
+    margin-bottom: 0;
+  }
+
+  .further__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 15px;
+  }
+
+  .further__item-wrapper {
+    // align-items: center;
+    width: 612px;
+    margin: 0;
+    margin-right: 38px;
+  }
+
+  .furter__characteristics {
+    width: 286px;
+  }
+
+  .further__button {
+    width: 245px;
+    margin: 0;
+  }
+
+ // Баннер
+  .banner {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .banner__wrapper-bg {
+    width: 245px;
+    min-height: 289px;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+    background-size: 245px 289px;
+    margin: 0;
+  }
+
+  .banner__wrapper {
+    display: block;
+    width: 155px;
+  }
+
+  .banner__gift {
+    margin: 0 auto;
+    margin-bottom: 65px;
+  }
+
+  .banner__text {
+    width: auto;
+    margin: 0;
+    text-align: center;
+  }
+
+}
