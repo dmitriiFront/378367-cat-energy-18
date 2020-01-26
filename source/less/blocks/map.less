@@ -2,43 +2,120 @@
   // border: 1px solid red;
 }
 
-.address {
-  display: flex;
-  padding: 31px 20px 26px;
+.text {
+  padding: 30px 0 25px;
   background-color: @light-grey;
 }
 
-.address__text {
-  margin-right: 19px;
+.text__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 87.5%;
+  margin: 0 auto;
+
+  // border: 1px solid #000;
+}
+
+.text__invitation {
+  width: 125px;
+  margin-right: 20px;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
+
+  // border: 1px solid #000;
+}
+
+.address {
+  width: 135px;
+
+  // border: 1px solid #000;
 }
 
 .address__title {
+  display: block;
   font-family: @spare-font;
   line-height: 1.43;
   color: @greyish;
 }
 
+
+
 .map__card {
-  position: relative;
+  // position: relative;
   // из-за растояния между блоками!!!!!!!
-  margin-bottom: -1px;
+  // margin-bottom: -1px;
+
+  // border: 1px solid red;
 }
 
-.map__card-image {
-  width: 320px;
-  height: 362px;
-  background-size: 320px 362px;
+
+// .map__mark-image {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%; -50%);
+//   width: 55px;
+//   height: 53px;
+//   background-size: 55px 53px;
+//   z-index: 2;
+// }
+
+
+@media (min-width: @tablet-width) {
+  .text {
+    padding: 60px 0 60px;
+  }
+
+  .text__wrapper {
+    width: 92.19%;
+  }
+
+  .text__invitation {
+    width: 155px;
+    font-size: 20px;
+  }
+
+  .address {
+    width: 155px;
+  }
+
+  .address__title {
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.25;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+// пока без карты!!!!!!!!!: 111 ;
 }
 
-.map__mark-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  // transform: translate(-50%; -50%);
-  width: 55px;
-  height: 53px;
-  background-size: 55px 53px;
+@media (min-width: @desktop-width) {
+  .map {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .text {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+  }
+
+  .text__wrapper {
+    width: 414px;
+  }
+
+  .address__title {
+    text-align: left;
+  }
+
+
+// пока без карты!!!!!!!!!: 111 ;
 }
+
