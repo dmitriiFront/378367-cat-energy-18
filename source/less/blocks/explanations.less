@@ -78,7 +78,7 @@
     min-height: 228px;
     margin-bottom: 89px;
 
-    border: 1px solid red;
+    // border: 1px solid red;
 
     &:last-child {
       margin-bottom: 0;
@@ -103,19 +103,19 @@
     color: @darker-white;
   }
 
-  .explanations__item--1::before {
+  .explanations__item:nth-child(1)::before {
     content: "1";
   }
 
-  .explanations__item--2::before {
+  .explanations__item:nth-child(2)::before {
     content: "2";
   }
 
-  .explanations__item--3::before {
+  .explanations__item:nth-child(3)::before {
     content: "3";
   }
 
-  .explanations__item--4::before {
+  .explanations__item:nth-child(4)::before {
     content: "4";
   }
 
@@ -149,7 +149,7 @@
     width: auto;
     margin: 0 auto;
 
-    border: 1px solid #000;
+    // border: 1px solid #000;
   }
 
   .explanations__item {
