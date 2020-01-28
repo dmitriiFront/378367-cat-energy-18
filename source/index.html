@@ -11,7 +11,6 @@
       <header class="page-header page-header--index">
         <div class="page-header__wrapper">
           <a class="page-header__logo" href="#">
-            <!-- <img class="page-header__logo-image" src=img/logo-mobile.svg alt=""> -->
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -40,7 +39,12 @@
           <div class="greeting-site__wrapper">
             <h1 class="greeting-site__title">Функциональное питание для котов</h1>
             <p class="greeting-site__instruction">Занялся ссобой? Займись котом!</p>
-            <img class="greeting-site__image" src="img/index-can-mobile@1x.png" alt="Функциональное питание для котов">
+            <!-- мб сделать картинку обсолютом а не background-ом в десктопе и добавить picture-->
+            <img class="greeting-site__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Функциональное питание для котов">
+            <!-- <picture>
+              <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <img class="greeting-site__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Функциональное питание для котов">
+            </picture> -->
           </div>
         </div>
         <a class="greeting-site__button button" href="form.html">Подобрать программу</a>
@@ -81,25 +85,25 @@
         <h2 class="explanations__title">Как это работает</h2>
         <ul class="explanations__list">
           <li class="explanations__item explanation">
-            <img class="explanation__image" src="img/advantage-leaf@1x.png" alt="здоровое питание">
+            <img class="explanation__image" src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x" alt="здоровое питание">
             <p class="explanation__intro">Функциональное питание содержит только полезные
               питательные вещества.
             </p>
           </li>
           <li class="explanations__item explanation">
-            <img class="explanation__image" src="img/advantage-powder@1x.png" alt="быстрый в притовлении">
+            <img class="explanation__image" src="img/advantage-powder@1x.png" srcset="img/advantage-powder@2x.png 2x" alt="быстрый в притовлении">
             <p class="explanation__intro">Выпускается в виде порошка, который нужно лишь
               залить кипятком и готово.
             </p>
           </li>
           <li class=" explanations__item explanation">
-            <img class="explanation__image" src="img/advantage-dining@1x.png" alt="замена двух порций обычной еды">
+            <img class="explanation__image" src="img/advantage-dining@1x.png" srcset="img/advantage-dining@2x.png 2x" alt="замена двух порций обычной еды">
             <p class="explanation__intro">Замените один-два приема обычной еды на наше
               функциональное питание.
             </p>
           </li>
           <li class="explanations__item explanation">
-            <img class="explanation__image" src="img/advantage-clock@1x.png" alt="быстрый результат">
+            <img class="explanation__image" src="img/advantage-clock@1x.png" srcset="img/advantage-clock@2x.png 2x" alt="быстрый результат">
             <p class="explanation__intro">Уже через месяц наслаждайтесь изменениями к
               лучшему вашего питомца!
             </p>
@@ -135,7 +139,12 @@
         </div>
 
         <div class="example__change change">
-            <img class="example__image" src="img/before-mobile@1x.png" alt="пример похудевшего кота">
+            <!-- <img class="example__image" src="img/before-mobile@1x.png" alt="пример похудевшего кота"> -->
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-mobile@2x.png 2x">
+            <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="пример похудевшего кота">
+            </picture>
             <div class="example__control control">
               <span class="control__item">Было</span>
               <input class="control__changing" type="range" min="1" max="3">
