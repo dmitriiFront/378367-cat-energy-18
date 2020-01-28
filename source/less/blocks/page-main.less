@@ -1,4 +1,5 @@
 .page-main {
+  display: block;
   margin-bottom: 30px;
 }
 
@@ -39,13 +40,17 @@
   border-bottom: 1px solid @light-grey;
 }
 
+picture {
+  flex-grow: 1;
+}
+
 .catalog__image {
   display: block;
   width: 140px;
   height: 144px;
   margin: 0 auto;
 
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .catalog__data {
@@ -86,6 +91,7 @@
 }
 
 .characteristics__item {
+  display: inline-block;
   padding: 0;
 }
 
@@ -141,9 +147,6 @@
   color: @greyish;
 }
 
-
-
-
 @media (min-width: @tablet-width) {
   .page-main {
     width: 92.19%;
@@ -164,7 +167,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    border: 1px solid blue;
+    // border: 1px solid bl
   }
 
   .catalog__item {
@@ -194,21 +197,25 @@
     position: absolute;
 
     top: -46px;
-// узнать у Ромы  , как сцертрировать!!!!!!!!
-    left: 25%;
+    // узнать у Ромы  , как сцертрировать!!!!!!!!
+    left: 50%;
+    transform: translateX(-50%);
     // right: 24%;
     // margin-left: auto;
     // margin-right: auto;
-    width: 161px;
+    width: auto;
     height: 172px;
     margin: 0;
   }
 
   .catalog__image--size {
     top: -84px;
-    left: 20%;
-    width: 195px;
+    right: 50%;
+    transform: translateX(-50%);
+    width: auto;
     height: 208px;
+
+    // border: 1px solid #000;
   }
 
   .catalog__data {
@@ -225,7 +232,7 @@
     line-height: 1;
   }
 
-// таблица
+  // таблица
   .characteristics {
     font-size: 16px;
     line-height: 1;
@@ -241,12 +248,12 @@
   .characteristics__item {
     padding: 0;
   }
-//
+
   .catalog__button {
     width: 77.16%;
   }
 
-// доп-секция
+  // доп-секция
   .show-all {
     padding-top: 55px;
     background-color: transparent;
@@ -287,8 +294,6 @@
   }
 }
 
-
-
 @media (min-width: @desktop-width) {
   .page-main {
     width: 1220px;
@@ -316,8 +321,9 @@
 
   .catalog__image {
     top: -46px;
-// узнать у Ромы, как сцертрировать!!!!!!!!
-    left: 45px;
+    // узнать у Ромы, как сцертрировать!!!!!!!!
+    left: 50%;
+    transform: translateX(-50%);
     // right: 24%;
     margin-left: auto;
     margin-right: auto;
@@ -325,12 +331,10 @@
 
   .catalog__image--size {
     top: -84px;
-    left: 29px;
   }
 
-// доп-секция
+  // доп-секция
   .show-all {
     border: 1px solid #cdcdcd;
   }
-
 }
