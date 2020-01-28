@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <div class="page-wrapper">
       <header class="page-header page-header--index">
@@ -183,7 +184,11 @@
         </li>
         <li class="page-footer__item social">
           <div class="social__wrapper">
-            <a class="social__link social__link--vk" href="#"></a>
+            <a class="social__link social__link--vk" href="#">
+              <svg class="social__svg social__svg--vk" width="23" height="18">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
             <a  class="social__link social__link--inst" href="https://www.facebook.com/htmlacademy"></a>
             <a class="social__link social__link--fb" href="https://www.instagram.com/htmlacademy"></a>
           </div>
@@ -194,28 +199,6 @@
         </li>
       </ul>
     </footer>
-
-    <!-- спит жена -->
-    <!-- <ul class="footer__social">
-      <li class="footer__social-item">
-        <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
-          <span class="visually-hidden">Мы в Контакте</span>
-          <svg width="22" height="12"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank">
-          <span class="visually-hidden">Мы в Инстаграме</span>
-          <svg width="17" height="17"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
-          <span class="visually-hidden">Мы в Фейсбуке</span>
-          <svg width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
-        </a>
-      </li>
-    </ul> -->
 
     <script>
       var navMain = document.querySelector('.main-nav');
