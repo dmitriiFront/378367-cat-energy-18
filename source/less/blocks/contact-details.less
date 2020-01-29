@@ -1,32 +1,49 @@
-.page-section__title {
-  // column-count: 2;
-}
-
 .сontact-details__label {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 14px;
-
   font-size: 16px;
   text-transform: uppercase;
   line-height: 1.13;
 
-
   &:last-child {
     margin: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+
+  &--mail::before {
+    top: 15px;
+    right: 15px;
+    background: url("../../img/icon-mail.svg") no-repeat;
+    background-size: 18px 14px;
+    width: 18px;
+    height: 14px;
+  }
+
+  &--phone::before {
+    top: 12px;
+    right: 12px;
+    background: url("../../img/icon-phone.svg") no-repeat;
+    background-size: 21px 21px;
+    width: 21px;
+    height: 21px;
   }
 }
 
 .сontact-details__span {
   margin-right: 11px;
-  // text-align: left;
   color: #222222;
 }
 
 .сontact-details__input {
+  // position: relative;
   flex-grow: 1;
-  // box-sizing: border-box;
   height: 45px;
   padding-left: 16px;
   font-family: @main-font;

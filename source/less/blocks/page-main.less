@@ -16,10 +16,6 @@
 .catalog__item {
   padding-bottom: 25px;
   border-bottom: 1px solid @light-grey;
-
-  &:first-child {
-    // border-top: 1px solid @light-grey;
-  }
 }
 
 .catalog__item-wrapper {
@@ -28,8 +24,6 @@
 
   width: 87.5%;
   margin: 0 auto;
-
-  // border: 1px solid #000;
 }
 
 .catalog__title {
@@ -49,45 +43,32 @@ picture {
   width: 140px;
   height: 144px;
   margin: 0 auto;
-
-  // border: 1px solid red;
 }
 
 .catalog__data {
   width: 50%;
   padding: 22px 0 18px;
-
-  // border: 1px solid fuchsia;
 }
 
 .catalog__name {
   display: block;
-  // margin-top: 22px;
   width: 73px;
   margin-bottom: 12px;
   font-size: 16px;
   line-height: 1.25;
-
-  // border: 1px solid #000;
 }
 
-// таблица!!!!!!!!!!!1
 .characteristics {
-  // margin-bottom: 18px;
   width: 100%;
   font-size: 12px;
   line-height: 1.33;
   font-family: @spare-font;
   color: @greyish;
-
-  // border: 1px solid red;
 }
 
 .characteristics__tr {
   display: flex;
   justify-content: space-between;
-
-  // border: 1px solid #000;
 }
 
 .characteristics__item {
@@ -104,7 +85,6 @@ picture {
   color: @white;
 }
 
-// доп-секция
 .show-all {
   padding-top: 27px;
 }
@@ -118,8 +98,14 @@ picture {
 .show-all__image {
   width: 30px;
   height: 30px;
-  // background-size: 30px 30px;
   margin-bottom: 25px;
+}
+
+.show-all__image-cross {
+  polygon {
+    fill: #222222;
+    opacity: 0.2;
+  }
 }
 
 .show-all__name {
@@ -152,8 +138,6 @@ picture {
     width: 92.19%;
     margin: 0 auto;
     margin-bottom: 70px;
-
-    // border: 1px solid #002320;
   }
 
   .page-title--catalog {
@@ -166,19 +150,15 @@ picture {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-    // border: 1px solid bl
   }
 
   .catalog__item {
     position: relative;
-    // width: 324/708*100%;
     width: 45.76%;
     padding-top: 165px;
     margin-bottom: 140px;
     padding-bottom: 40px;
     background-color: @darker-white;
-    // занулить у последних двух!!!!!!!!!!!!!!!!!!!
 
     &:last-child,
     &:nth-last-child(2) {
@@ -188,21 +168,15 @@ picture {
 
   .catalog__item-wrapper {
     display: block;
-    // width: 250/324*100%;
     width: 77.16%;
     margin-bottom: 33px;
   }
 
   .catalog__image {
     position: absolute;
-
     top: -46px;
-    // узнать у Ромы  , как сцертрировать!!!!!!!!
     left: 50%;
     transform: translateX(-50%);
-    // right: 24%;
-    // margin-left: auto;
-    // margin-right: auto;
     width: auto;
     height: 172px;
     margin: 0;
@@ -210,12 +184,10 @@ picture {
 
   .catalog__image--size {
     top: -84px;
-    right: 50%;
+    left: 50%;
     transform: translateX(-50%);
     width: auto;
     height: 208px;
-
-    // border: 1px solid #000;
   }
 
   .catalog__data {
@@ -232,7 +204,6 @@ picture {
     line-height: 1;
   }
 
-  // таблица
   .characteristics {
     font-size: 16px;
     line-height: 1;
@@ -241,8 +212,6 @@ picture {
   .characteristics__tr {
     border-bottom: 1px solid @pinkish-grey;
     padding: 9px 0 9px;
-
-    // border: 1px solid #000;
   }
 
   .characteristics__item {
@@ -253,7 +222,6 @@ picture {
     width: 77.16%;
   }
 
-  // доп-секция
   .show-all {
     padding-top: 55px;
     background-color: transparent;
@@ -262,7 +230,6 @@ picture {
     border-right: 1px solid #cdcdcd;
   }
 
-  // повторение кода. видимо, где-то переопределяется выше
   .show-all__wrapper {
     display: flex;
     flex-direction: column;
@@ -272,7 +239,6 @@ picture {
   .show-all__image {
     width: 60px;
     height: 60px;
-    // background-size: 60px 60px;
     margin-bottom: 50px;
   }
 
@@ -301,13 +267,8 @@ picture {
     margin-bottom: 80px;
   }
 
-  .catalog__list {
-    // border: 1px solid blue;
-  }
-
   .catalog__item {
     width: 245px;
-    // занулить у последних двух!!!!!!!!!!!!!!!!!!!
 
     &:nth-last-child(3),
     &:nth-last-child(4) {
@@ -319,21 +280,10 @@ picture {
     width: 170px;
   }
 
-  .catalog__image {
-    top: -46px;
-    // узнать у Ромы, как сцертрировать!!!!!!!!
-    left: 50%;
-    transform: translateX(-50%);
-    // right: 24%;
-    margin-left: auto;
-    margin-right: auto;
+  .catalog__button {
+    width: 69%;
   }
 
-  .catalog__image--size {
-    top: -84px;
-  }
-
-  // доп-секция
   .show-all {
     border: 1px solid #cdcdcd;
   }
