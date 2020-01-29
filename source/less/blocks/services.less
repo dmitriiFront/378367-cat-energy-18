@@ -1,10 +1,7 @@
 .services {
-  // margin-bottom: 32px;
   width: 87.5%;
   margin: 0 auto;
   margin-bottom: 30px;
-
-  // border: 1px solid black;
 }
 
 .services__item {
@@ -17,11 +14,8 @@
   }
 }
 
-.service__wrapper {
-  // border: 1px solid red;
-}
-
 .service__image {
+  position: relative;
   float: left;
   width: 50px;
   height: 50px;
@@ -30,21 +24,28 @@
   margin-right: 20px;
 }
 
-// .service__image--slimming {
-//   width: 35px;
-//   height: 49px;
-//   box-sizing: 35px 49px;
-// }
+.service__image-slimming {
+  position: absolute;
+  top: -2px;
+  left: 8px;
+  display: block;
+  width: 35px;
+  height: 49px;
+  background: url("../img/icon-cat-slim.svg") no-repeat;
+}
 
-// .service__image--mass-gain {
-//   width: 35px;
-//   height: 13px;
-//   box-sizing: 35px 13px;
-// }
+.service__image-mass-gain {
+  position: absolute;
+  bottom: 12px;
+  left: -8px;
+  display: block;
+  width: 67px;
+  height: 28px;
+  background: url("../img/icon-cat-pro.svg") no-repeat;
+}
 
 .service__title {
   padding-top: 6px;
-  // из-за padding-а
   margin-bottom: 30px;
   font-size: 24px;
   line-height: 1.54;
@@ -62,7 +63,6 @@
 }
 
 .service__link {
-  // display: inline-block;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -80,17 +80,11 @@
   .services {
     width: 92.19%;
     margin-bottom: 49px;
-
-    // border: 1px solid red;
   }
-  // проба
+
   .services__item {
     padding: 80px 60px 60px 52px;
     margin-bottom: 30px;
-  }
-
-  .service__wrapper {
-    // border: 1px solid hotpink;
   }
 
   .service__image {
@@ -98,8 +92,21 @@
     width: 200px;
     height: 200px;
     margin-right: 0;
-    margin-left: 20px;
-    background-size: 140px 194px;
+    margin-left: 50px;
+  }
+
+  .service__image-slimming {
+    top: -10px;
+    left: 35px;
+    width: 141px;
+    height: 194px;
+  }
+
+  .service__image-mass-gain {
+    bottom: 45px;
+    left: -35px;
+    width: 268px;
+    height: 113px;
   }
 
   .service__title {
@@ -149,14 +156,25 @@
     float: left;
     width: 100px;
     height: 100px;
-    // возможно у каждой картинки будет разный отступ!!!!!!!!!
     margin-right: 64px;
     margin-left: 0;
-    background-size: 71px 97px;
+  }
+
+  .service__image-slimming {
+    top: -5px;
+    left: 15px;
+    width: 71px;
+    height: 97px;
+  }
+
+  .service__image-mass-gain {
+    bottom: 20px;
+    left: -15px;
+    width: 134px;
+    height: 57px;
   }
 
   .service__title {
-    // для равнения из-за float!!!!1
     padding-top: 30px;
     margin-bottom: 45px;
   }

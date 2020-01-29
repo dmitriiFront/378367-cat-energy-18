@@ -44,8 +44,6 @@
 
 .further__item-wrapper {
   margin-bottom: 15px;
-
-  // border: 1px solid yellow;
 }
 
 .further__name {
@@ -65,7 +63,6 @@
   height: 40px;
 }
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11
 .banner {
   width: 100%;
   background-color: @lightGreen;
@@ -82,36 +79,34 @@
     background: url("../img/gift-photo-mobile@2x.jpg") no-repeat;
     background-size: 280px 289px;
   }
-  // border: 1px solid #122323;
 }
 
 .banner__wrapper {
   margin: 0 auto;
   width: 165px;
   padding-top: 65px;
-
-  // border: 1px solid red;
 }
 
 .banner__gift {
   width: 56px;
-  height: 61px;
   margin: 0 auto 64px;
-  background: url("../img/icon-gift.svg") no-repeat;
-  background-size: 56px 61px;
+}
 
-  // border: 1px solid #000;
+.banner__gift-img {
+  width: 56px;
+  height: 61px;
+
+  path {
+    fill: @white;
+  }
 }
 
 .banner__text {
-  // перенести "и" на следующую строку!!!!!
   font-family: @spare-font;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
   color: @white;
-
-  // border: 1px solid red;
 }
 
 @media (min-width: @tablet-width) {
@@ -131,14 +126,12 @@
     &::before {
       content: "";
       width: 28px;
-      // flex-grow: 1;
       height: 3px;
       margin-right: 38px;
       background-color: @lightGreen;
     }
   }
 
-  // мб этим выступит ul-ка!!!!!!!!!11
   .further__wrapper {
     width: 92.19%;
   }
@@ -160,8 +153,6 @@
     width: 89.3%;
     margin: 0 auto;
     margin-bottom: 26px;
-
-    // border: 1px solid #055500;
   }
 
   .further__name {
@@ -172,8 +163,6 @@
     width: 32%;
     margin-bottom: 0;
     font-size: 16px;
-
-    // border: 1px solid #444000;
   }
 
   .further__button {
@@ -182,7 +171,6 @@
     height: 40px;
   }
 
-  // Баннер
   .banner__wrapper-bg {
     width: 708px;
     min-height: 200px;
@@ -204,13 +192,11 @@
 
   .banner__gift {
     margin: 0;
-    // margin-right: 275px;
   }
 
   .banner__text {
     width: 170px;
     margin-right: 35px;
-    // перенести "и" на следующую строку!!!!!
     text-align: left;
   }
 }
@@ -228,7 +214,6 @@
     }
   }
 
-  // мб этим выступит ul-ка!!!!!!!!!11
   .further__wrapper {
     display: flex;
     justify-content: space-between;
@@ -248,7 +233,6 @@
   }
 
   .further__item-wrapper {
-    // align-items: center;
     width: 612px;
     margin: 0;
     margin-right: 38px;
@@ -263,7 +247,6 @@
     margin: 0;
   }
 
-  // Баннер
   .banner {
     width: auto;
     height: auto;

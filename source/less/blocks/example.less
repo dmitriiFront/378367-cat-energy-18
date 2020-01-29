@@ -6,16 +6,12 @@
 .example__wrapper {
   width: 87.5%;
   margin: 0 auto;
-
-  // border: 1px solid #000;
 }
 
 .example__title {
   margin-left: 5.88%;
   margin-bottom: 33px;
   font-size: 36px;
-  // line-height: 1.67;
-  // из-за большого отступа!!!!
 }
 
 .example__text {
@@ -23,25 +19,19 @@
   font-family: @spare-font;
   line-height: 1.29;
   color: @greyish;
-
-  // border: 1px solid red;
 }
 
 .wrapper-flex {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
-
-  // border: 1px solid #000;
 }
 
 .example__item {
   position: relative;
   display: flex;
   box-sizing: border-box;
-  // width: (124/280)*100%;
   width: 44.28%;
-  // width: 124px;
   height: 56px;
   margin-right: 14px;
   border: 1px solid @pinkish-grey;
@@ -61,14 +51,10 @@
 }
 
 .index__desc {
-  // display: none;
   display: block;
   position: absolute;
-  // box-sizing: border-box;
-  // !!!!!!!!!!!
   top: 84%;
   left: 20.5%;
-  // width: (54/124)*100%;
   width: 43.55%;
   height: 21px;
   padding: 0 12.9%;
@@ -78,8 +64,6 @@
   text-align: center;
   color: @greyish;
   background-color: @darker-white;
-
-  // border: 1px solid red;
 
   &:last-child {
     left: 15%;
@@ -96,8 +80,6 @@
 .example__change {
   margin: 0 auto;
   width: 320px;
-
-  // border: 1px solid #000;
 }
 
 .example__image {
@@ -108,22 +90,49 @@
 }
 
 .example__control {
+  position: relative;
   display: flex;
-  justify-content: center;
-  width: 200px;
+  justify-content: space-between;
+  width: 190px;
   margin: 0 auto;
-
-  // border: 1px solid aqua;
 }
 
 .control__item {
+  display: block;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
 }
 
+.control__item-it-was {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    top: 4px;
+    left: 50px;
+    width: 84px;
+    height: 14px;
+    border-radius: 6px;
+    border: solid 1px @pinkish-grey;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 57px;
+    width: 35px;
+    height: 7px;
+    border-radius: 6px;
+    background-color: @lightGreen;
+  }
+}
+
 .control__changing {
-  flex-grow: 1;
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -131,7 +140,6 @@
     padding: 0;
     padding-bottom: 0;
     background: transparent;
-    // background: @darker-white;
   }
 
   .example__wrapper {
@@ -158,15 +166,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    // border: 1px solid red;
   }
 
   .wrapper-flex {
     width: 368px;
     margin-bottom: 0;
-
-    // border: 1px solid red;
   }
 
   .example__item {
@@ -190,7 +194,7 @@
   }
 
   .index__desc {
-    background-color: transparent;
+    background-color: @white;
   }
 
   .example__expenses {
@@ -216,8 +220,6 @@
     min-height: 462px;
     background: @darker-white;
 
-    // border: 1px solid red;
-
     &::before {
       content: "";
 
@@ -240,8 +242,6 @@
     width: 677px;
     height: 499px;
     margin-bottom: 0;
-
-    // border: 1px solid #ddd000;
   }
 
   .example__control {
@@ -252,13 +252,50 @@
     width: 570px;
     margin-left: auto;
     margin-right: auto;
-    // отступы верные, из-за шрифта все рушится!!!!!!!!!!!
   }
 
   .control__item {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.25;
     text-transform: uppercase;
+  }
+
+  .control__item-it-was {
+    &::before {
+      top: 10px;
+      left: 65px;
+      width: 428px;
+      height: 6px;
+      border: none;
+      border-radius: 2.5px;
+      background-color: #dcdcdc;
+    }
+
+    &::after {
+      top: -4px;
+      left: 265px;
+      width: 34px;
+      height: 34px;
+      border: solid 1px #cdcdcd;
+      background-color: @white;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .control__item-has-become {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: 283px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: @lightGreen;
+    }
   }
 
   .control__changing {
@@ -277,8 +314,6 @@
   .example__wrapper-main {
     display: flex;
     background: @darker-white;
-
-    // border: 1px solid chartreuse;
   }
 
   .example__wrapper {
@@ -329,10 +364,7 @@
   .example__change {
     width: 27.4%;
     background: #eaeaea;
-
-    // border: 1px solid red;
   }
-
 
   .example__image {
     top: -172px;
@@ -341,7 +373,6 @@
 
   .example__control {
     position: absolute;
-
     top: 370px;
     left: -330px;
   }
