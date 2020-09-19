@@ -2,7 +2,7 @@
   background-color: @darker-white;
 }
 
-.page-footer__list {
+.page-footer__wrapper {
   width: 87.5%;
   margin: 0 auto;
 }
@@ -11,97 +11,12 @@
   border-bottom: 1px solid #dadada;
 }
 
-.cat-energy {
-  padding: 39px 0 31px;
-}
-
-.page-footer__title {
-  display: block;
-  width: 128px;
-  height: 24px;
-  margin: 0 auto;
-  background: url("../img/logo-footer.svg") no-repeat;
-  background-size: 128px 24px;
-}
-
-.social__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 135px;
-  margin: 0 auto;
-  padding: 17px 0 16px;
-}
-
-.social__link {
-  padding: 5px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.social__link-vk {
-  width: 22px;
-  height: 12px;
-
-  path {
-    fill: @greyish-666;
-  }
-}
-
-.social__link-inst {
-  width: 17px;
-  height: 17px;
-
-  path,
-  circle {
-    fill: @greyish-666;
-  }
-}
-
-.social__link-fb {
-  width: 10px;
-  height: 19px;
-
-  path {
-    fill: @greyish-666;
-  }
-}
-
-.copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-basis: 170px;
-  padding: 19px 0;
-}
-
-.copyright__text {
-  padding: 3px 3px 10px;
-  font-size: 16px;
-  color: @greyish;
-  font-family: @spare-font;
-}
-
-.copyright__logo {
-  width: 40px;
-  height: 45px;
-  padding: 3px;
-}
-
-.copyright__logo-htmlacademy {
-  path {
-    fill: @greyish-666;
-  }
-}
-
 @media (min-width: @tablet-width) {
   .page-footer {
     padding: 55px 0;
   }
 
-  .page-footer__list {
+  .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,40 +29,14 @@
     padding: 0;
     margin: 0;
   }
-
-  .social__wrapper {
-    width: 125px;
-    padding: 0;
-  }
-
-  .social__link-vk {
-    width: 30px;
-    height: 16px;
-  }
-
-  .social__link-inst {
-    width: 23px;
-    height: 23px;
-  }
-
-  .social__link-fb {
-    width: 14px;
-    height: 28px;
-  }
-
-  .copyright {
-    width: 162px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    width: 1440px;
-    margin: 0 auto;
-    padding: 57px 0 53px;
+     padding: 57px 0 53px;
   }
 
-  .page-footer__list {
-    width: 1220px;
+  .page-footer__wrapper {
+    width: 84.7%;
   }
 }
